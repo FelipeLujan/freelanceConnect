@@ -1,0 +1,42 @@
+GET http://localhost:5000/api/posts/test
+Accepts: application/json
+
+<> 2018-05-23T073634.200.json
+
+###
+
+GET http://localhost:8000/api/posts/test
+Accepts: application/json
+
+###
+
+GET http://localhost:5000/api/users/test
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-23T073330.200.json
+
+###
+
+GET http://localhost:5000/api/users/test
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-23T073306.200.json
+
+###
+
+GET http://localhost:5000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-23T073115.200.html
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+

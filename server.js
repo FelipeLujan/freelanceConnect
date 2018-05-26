@@ -1,11 +1,14 @@
 const express = require("express");
 const app = express();
-// initialize express
-// nodemon can auto update the server on changes
 const mongoose = require("mongoose");
 const users = require("./routes/api/users");
 const profile = require("./routes/api/profile");
 const posts = require("./routes/api/posts");
+const bodyParser = require("body-parser");
+const passport = require("passport");
+
+// initialize express
+// nodemon can auto update the server on changes
 
 // ===========================DB config======================================
 const db = require("./config/keys").mongoURI;
@@ -16,9 +19,16 @@ mongoose
   .then(() => console.log("mongoDB Connected"))
   .catch(error => console.log(error));
 
-// ===========================ROUTES======================================
-app.get("/", (req, res) => res.send("hello"));
+// ===========================Connect To mongoDB======================================
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+//passport middleware
+app.use(passport.initialize());
 
+//in passport we could use many strategies, this time a JWT strategy
+require("./config/passport")(passport);
+
+/*===========================ROUTES======================================*/
 //use routes
 app.use("/api/users", users);
 app.use("/api/profile", profile);
