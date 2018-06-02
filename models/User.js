@@ -1,5 +1,5 @@
-const mongoogse = require("mongoose");
-const schema = mongoogse.Schema;
+const mongoose = require("mongoose");
+const schema = mongoose.Schema;
 
 //create schema
 
@@ -26,6 +26,6 @@ const UserSchema = new schema({
 });
 //this is what the user collection is going to have
 
-User = mongoogse.model("users", UserSchema);
+User = mongoose.model("users", UserSchema);
 module.exports = User;
 //this exports the mongoose model

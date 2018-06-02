@@ -7,8 +7,11 @@ const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 const passport = require("passport");
 
-//load input validaton
+//load input validaton for Register
 const validateRegisterInput = require("../../validation/register");
+
+//load input validaton for Login
+const validateLoginInput = require("../../validation/login");
 
 //Import User Model
 const User = require("../../models/User");
@@ -26,7 +29,6 @@ router.get("/test", (req, res) =>
 //@route    GET api/users/register
 //@desc     register usser to mlab
 //@access   public
-
 router.post("/register", (req, res) => {
   //validate the error from the user input
   //this pulls out "errors" and "isValid" from register.js
@@ -84,6 +86,13 @@ router.post("/register", (req, res) => {
 //@access   public
 router.post("/login", (req, res) => {
   //user sends a login form
+
+  const { errors, isValid } = validateLoginInput(req.body);
+
+  //the way to check if there are errors is evaluate if "isValid" is false
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
   const email = req.body.email;
   const password = req.body.password;
 
@@ -116,10 +125,9 @@ router.post("/login", (req, res) => {
         //sign takes a payload (it contains the info to recognize the user),
         // a secret and expiration of the token
       } else {
+        errors.password = "Password incorrect";
         //if it doesn't json password incorrect
-        return res.status(400).json({
-          password: "password incorrect"
-        });
+        return res.status(400).json(errors);
       }
     });
   });

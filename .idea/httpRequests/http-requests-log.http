@@ -1,3 +1,21 @@
+POST http://localhost:5000/api/users/login
+Accepts: application/json
+email: felipe@aol.com
+password: 123534753745
+
+<> 2018-05-29T080710.400.json
+
+###
+
+POST http://localhost:5000/api/users/login
+Accepts: application/json
+email: felipe@aol.com
+password: 123
+
+<> 2018-05-29T080629.400.json
+
+###
+
 GET http://localhost:5000/api/posts/test
 Accepts: application/json
 

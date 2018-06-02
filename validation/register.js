@@ -9,9 +9,9 @@ function validateRegisterInput(data) {
   //this errors object will be populated with errors coming from the following validations
 
   data.name = !isEmpty(data.name) ? data.name : "";
-  data.email = !isEmpty(data.email) ? data.name : "";
-  data.password = !isEmpty(data.password) ? data.name : "";
-  data.password2 = !isEmpty(data.password2) ? data.name : "";
+  data.email = !isEmpty(data.email) ? data.email : "";
+  data.password = !isEmpty(data.password) ? data.password : "";
+  data.password2 = !isEmpty(data.password2) ? data.password2 : "";
   //they way validator works, is checking if STRINGS are empty. if req.name is not filled, it wouldn't
   //be a string, so it must be set to a string beforehand
 
@@ -25,7 +25,7 @@ function validateRegisterInput(data) {
   if (validator.isEmpty(data.email)) {
     errors.email = "Please enter your e-mail.";
   }
-  if (validator.isEmail(data.email)) {
+  if (!validator.isEmail(data.email)) {
     errors.email = "Please enter a correct E-mail.";
   }
   if (validator.isEmpty(data.password)) {

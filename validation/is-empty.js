@@ -5,4 +5,7 @@ const isEmpty = value =>
   (typeof value === "object" && Object.keys(value).length === 0) || // if the input is an object, but that input has 0 keys
   (typeof value === "string" && value.trim().length === 0); // if is a string of 0 length
 
+/*isEmpty('')//?  => true*/
+
+//if the value (input) is empty, returns TRUE
 module.exports = isEmpty;
