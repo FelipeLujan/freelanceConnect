@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
-const schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-//create schema
+//create Schema
 
-const UserSchema = new schema({
+const UserSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -26,6 +26,5 @@ const UserSchema = new schema({
 });
 //this is what the user collection is going to have
 
-User = mongoose.model("users", UserSchema);
-module.exports = User;
+module.exports = User = mongoose.model("users", UserSchema);
 //this exports the mongoose model

@@ -16,16 +16,6 @@ const validateLoginInput = require("../../validation/login");
 //Import User Model
 const User = require("../../models/User");
 
-//@route    GET api/users/tests
-//@desc     test post route
-//@access   public
-// because i used app.use("/api/users", users), router.get("/tests") renders localhost:xxx/api/users/tests
-router.get("/test", (req, res) =>
-  res.json({
-    msg: "user works"
-  })
-);
-
 //@route    GET api/users/register
 //@desc     register usser to mlab
 //@access   public
@@ -61,7 +51,7 @@ router.post("/register", (req, res) => {
         avatar,
         password: req.body.password
       });
-
+        //bcript is necessary to encrypt the pass, otherwise it'd be plain text
       bcrypt.genSalt(10, (err, salt) => {
         //gensalt(10, callback) is used to encrypt the password, 10 is kind of the security level,
         bcrypt.hash(newUser.password, salt, (err, hash) => {
@@ -147,4 +137,5 @@ router.get(
       email: req.user.email
     }) // this is the response in case the middleware allows to continue
 );
+
 module.exports = router;

@@ -14,14 +14,6 @@ const validateProfileInput = require("../../validation/profile");
 
 /*=======================================ROUTES==============================*/
 
-//@route    GET api/profile/tests
-//@desc     test post route
-//@access   public
-router.get("/test", (req, res) =>
-  res.json({
-    msg: "profile works"
-  })
-);
 // because i used app.use("/api/users", users), router.get("/tests") renders localhost:xxx/api/users/tests
 
 //@route    GET api/profile/
@@ -29,28 +21,94 @@ router.get("/test", (req, res) =>
 //@access   private
 router.get(
   "/",
-  passPort.authenticate("jwt", { session: false }, (req, res) =>
+    passPort.authenticate("jwt", {session: false}),
+    (req, res) => {
+        const errors = {};
+
     Profile.findOne({ user: req.user.id })
+
+    // we want the name and the avatar in the profile, but not the email
+        .populate("user", ["name", "avatar"])
       //inside the Profile, the key is going to be filled with the result of req.user.id
       .then(profile => {
         //findOne promise is going to return a profile given the user id
-        const errors = {};
         if (!profile) {
           //if no user is found, create and errors object an populate it
           errors.noProfile = "there is no profile for this user";
           return res.status(404).json();
         }
+          console.log("profile found");
         res.json(profile);
       })
       .catch(err => {
-        console.log(err);
-      })
-  )
+          console.log("an error has occured", err);
+      });
+    }
 );
+
+//@route    GET api/profile/all
+//@desc     list all profiles
+//@access   public
+router.get("/all", (req, res) => {
+    const errors = {};
+    //again, propulate name and avatar from the user collection.
+    Profile.find()
+        .populate("user", ["name", "avatar"])
+        .then(profiles => {
+            if (!profiles) {
+                errors.profiles = "there are no profiles";
+                return res.status(404).json();
+            }
+            res.json(profiles);
+        })
+        .catch(err => res.status(404).json({profile: "There are no profiles"}));
+});
+
+//@route    GET api/profile/handle/:handle
+//@desc     get user profile by tis handle
+//@access   public, anybody even search engines will be able to see the profiles. we don't care about privacy at devConnect
+
+router.get("/handle/:handle", (req, res) => {
+    const errors = {};
+    Profile.findOne({handle: req.params.handle})
+
+    //include name and avatar in the response json (profile)
+        .populate("user", ["name", "avatar"])
+        .then(profile => {
+            if (!profile) {
+                errors.noProfile = "there is no profile for this user";
+                res.status(404).json(errors);
+            }
+            res.json(profile);
+        })
+        .catch(err => res.status(404).json(err));
+});
+
+//@route    GET api/profile/user/:user_id
+//@desc     get user profile by tis handle
+//@access   public, anybody even search engines will be able to see the profiles. we don't care about privacy at devConnect
+
+router.get("/user/:user_id", (req, res) => {
+    const errors = {};
+    Profile.findOne({user: req.params.user_id})
+
+    //include name and avatar in the response json (profile)
+        .populate("user", ["name", "avatar"])
+        .then(profile => {
+            if (!profile) {
+                errors.noProfile = "there is no profile for this user";
+                res.status(404).json(errors);
+            }
+            res.json(profile);
+        })
+        .catch(err =>
+            res.status(404).json({profile: "there is no profile for this user"})
+        );
+});
 
 //@route    POST api/profile/
 //@desc     create or edit user profile
-//@access   private
+//@access   private (requires header Authorization: "Bearer [token]"
 router.post(
   "/",
   passPort.authenticate("jwt", { session: false }),
@@ -65,7 +123,7 @@ router.post(
 
     // get fields form req.body and fill profileFields with it's content
     const profileFields = {};
-    profileFields.user = req.user.id;
+      profileFields.user = req.user.id; //this is the logged in user, its in the request, not in the profile form
     if (req.body.handle) profileFields.handle = req.body.handle;
     if (req.body.company) profileFields.company = req.body.company;
     if (req.body.website) profileFields.website = req.body.website;
@@ -91,16 +149,37 @@ router.post(
     if (req.body.linkedin) profileFields.social.linkedin = req.body.linkedin;
     if (req.body.instagram) profileFields.social.instagram = req.body.instagram;
 
-    Profile.findOne({ user: req.body.id }).then(profile => {
+      Profile.findOne({user: req.user.id}).then(profile => {
       if (profile) {
+          console.log(profile);
         // search for an user given the logged in user's id
-        //if a profile with this id is found, that means that the user us updating, not creating
+          //if a profile with this id is found, that means that the user is updating, not creating a new profile
         Profile.findOneAndUpdate(
           { user: req.user.id },
           { $set: profileFields },
           { new: true }
-        ).then(profile => res.json(profile));
+        )
+            .then(profile => {
+                res.json(profile);
+                console.log("profile found and updated");
+            })
+            .catch(error => console.log(error));
+      } else {
+          //check if handle exists
+          Profile.findOne(
+              {handle: profileFields.handle}.then(profile => {
+                  if (profile) {
+                      errors.handle = "That handle has already been chosen.";
+                      res.status(400).json(errors);
+                  }
+                  new Profile(profileFields)
+                      .save()
+                      .then(profile => res.json(profile));
+              })
+          );
       }
+          /*THERE'S CURRENTLY A BUG IN WHICH A NEW DOCUMENT WILL BE CREATED IN THE PROFILES COLLECTION
+          * EVERY TIME A PROFILE IS UPDATED*/
       //if the profile is not found, it means that the user just registered and doesn't have a profile yet
       //check if handle exists
       Profile.findOne({ handle: profileFields.handle }).then(profile => {
@@ -110,7 +189,10 @@ router.post(
         }
 
         //save profile
-        new Profile(profileFields).save().then(profile => res.json(profile));
+          new Profile(profileFields)
+              .save()
+              .then(profile => res.json(profile))
+              .catch(err => console.log(err));
       });
     });
   }

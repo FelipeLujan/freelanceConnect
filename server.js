@@ -19,7 +19,7 @@ mongoose
   .then(() => console.log("mongoDB Connected"))
   .catch(error => console.log(error));
 
-// ===========================Connect To mongoDB======================================
+// ===========================BodyParser middleware config======================================
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 //passport middleware
