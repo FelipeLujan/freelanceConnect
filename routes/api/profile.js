@@ -179,7 +179,7 @@ router.post(
           );
       }
           /*THERE'S CURRENTLY A BUG IN WHICH A NEW DOCUMENT WILL BE CREATED IN THE PROFILES COLLECTION
-              * EVERY TIME A PROFILE IS UPDATED*/
+                  * EVERY TIME A PROFILE IS UPDATED*/
       //if the profile is not found, it means that the user just registered and doesn't have a profile yet
       //check if handle exists
       Profile.findOne({ handle: profileFields.handle }).then(profile => {
