@@ -12,6 +12,7 @@ const User = require("../../models/User");
 //Validation logic
 const validateProfileInput = require("../../validation/profile");
 const validateExperienceInput = require("../../validation/experience");
+const validateEducationInput = require("../../validation/education");
 
 /*=======================================ROUTES==============================*/
 
@@ -210,6 +211,39 @@ router.post(
       profile.save().then(profile => res.json(profile));
     });
   }
+);
+
+//@route    POST api/profile/experience
+//@desc     add education to profile
+//@access   private (requires user to be logged in)
+router.post(
+    "/education",
+    passPort.authenticate("jwt", {session: false}),
+    (req, res) => {
+        console.log(req.body);
+        const {errors, isValid} = validateEducationInput(req.body);
+        //check isValid, if not valid, return errors' contents
+        if (!isValid) {
+            return res.status(400).json(errors);
+        }
+
+        Profile.findOne({user: req.user.id}).then(profile => {
+            //this is the experience object, experience will not be a collection, its an array within the profile
+            const newEdu = {
+                school: req.body.school,
+                degree: req.body.degree,
+                fieldofstudy: req.body.fieldofstudy,
+                from: req.body.from,
+                to: req.body.to,
+                current: req.body.current,
+                description: req.body.description
+            };
+
+            //add to experience array
+            profile.education.unshift(newEdu);
+            profile.save().then(profile => res.json(profile));
+        });
+    }
 );
 
 module.exports = router;
