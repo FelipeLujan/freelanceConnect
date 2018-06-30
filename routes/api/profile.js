@@ -5,12 +5,13 @@ const router = express.Router();
 const mongoose = require("mongoose");
 const passPort = require("passport");
 
-//load Profile Model
+//Models
 const Profile = require("../../models/Profile");
-//load User Model
 const User = require("../../models/User");
-//load validation for profile input
+
+//Validation logic
 const validateProfileInput = require("../../validation/profile");
+const validateExperienceInput = require("../../validation/experience");
 
 /*=======================================ROUTES==============================*/
 
@@ -151,7 +152,7 @@ router.post(
 
       Profile.findOne({user: req.user.id}).then(profile => {
       if (profile) {
-          console.log(profile);
+          console.log("profile found for this user");
         // search for an user given the logged in user's id
           //if a profile with this id is found, that means that the user is updating, not creating a new profile
         Profile.findOneAndUpdate(
@@ -166,35 +167,49 @@ router.post(
             .catch(error => console.log(error));
       } else {
           //check if handle exists
-          Profile.findOne(
-              {handle: profileFields.handle}.then(profile => {
-                  if (profile) {
-                      errors.handle = "That handle has already been chosen.";
-                      res.status(400).json(errors);
-                  }
-                  new Profile(profileFields)
-                      .save()
-                      .then(profile => res.json(profile));
-              })
-          );
+          Profile.findOne({handle: profileFields.handle}).then(profile => {
+              if (profile) {
+                  errors.handle = "That handle has already been chosen.";
+                  res.status(400).json(errors);
+              }
+              console.log("New Profile saved.");
+              new Profile(profileFields).save().then(profile => res.json(profile));
+          });
       }
-          /*THERE'S CURRENTLY A BUG IN WHICH A NEW DOCUMENT WILL BE CREATED IN THE PROFILES COLLECTION
-                      * EVERY TIME A PROFILE IS UPDATED*/
-      //if the profile is not found, it means that the user just registered and doesn't have a profile yet
-      //check if handle exists
-      Profile.findOne({ handle: profileFields.handle }).then(profile => {
-        if (profile) {
-          /*errors.handle = "this handle already exists";
-          res.status(400).json(errors);*/
-        }
-
-        //save profile
-          new Profile(profileFields)
-              .save()
-              .then(profile => res.json(profile))
-              .catch(err => console.log(err));
-      });
     });
   }
 );
+
+//@route    POST api/profile/experience
+//@desc     add experience to profile
+//@access   private (requires user to be logged in)
+router.post(
+    "/experience",
+    passPort.authenticate("jwt", {session: false}),
+    (req, res) => {
+        const {errors, isValid} = validateExperienceInput(req.body);
+        //check isValid, if not valid, return errors' contents
+        if (!isValid) {
+            return res.status(400).json(errors);
+        }
+
+        Profile.findOne({user: req.user.id}).then(profile => {
+            //this is the experience object, experience will not be a collection, its an array within the profile
+            const newExp = {
+                title: req.body.title,
+                company: req.body.company,
+                location: req.body.location,
+                from: req.body.from,
+                to: req.body.to,
+                current: req.body.current,
+                description: req.body.description
+            };
+
+            //add to experience array
+            profile.experience.unshift(newExp);
+            profile.save().then(profile => res.json(profile));
+        });
+    }
+);
+
 module.exports = router;
