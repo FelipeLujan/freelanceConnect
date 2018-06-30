@@ -51,7 +51,7 @@ router.post("/register", (req, res) => {
         avatar,
         password: req.body.password
       });
-        //bcript is necessary to encrypt the pass, otherwise it'd be plain text
+      //bcript is necessary to encrypt the pass, otherwise it'd be plain text
       bcrypt.genSalt(10, (err, salt) => {
         //gensalt(10, callback) is used to encrypt the password, 10 is kind of the security level,
         bcrypt.hash(newUser.password, salt, (err, hash) => {

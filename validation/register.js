@@ -34,10 +34,10 @@ function validateRegisterInput(data) {
   if (!validator.isLength(data.password, { min: 6, max: 30 })) {
     errors.password = "Your password needs to be at least 6 characters.";
   }
-    if (validator.isEmpty(data.password2)) {
+  if (validator.isEmpty(data.password2)) {
     errors.password2 = "Please confirm your password.";
   }
-    if (!validator.equals(data.password, data.password2)) {
+  if (!validator.equals(data.password, data.password2)) {
     errors.password2 = "Passwords do not match.";
   }
 
