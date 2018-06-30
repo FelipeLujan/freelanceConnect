@@ -246,4 +246,33 @@ router.post(
     }
 );
 
+//@route    DELETE api/profile/experience/:exp_id
+//@desc     delete experience from profile
+//@access   private (requires user to be logged in)
+router.delete(
+    "/experience/:exp_id",
+    passPort.authenticate("jwt", {session: false}),
+    (req, res) => {
+        //first, find the profile we want to take the experience from
+
+        Profile.findOne({user: req.user.id}).then(profile => {
+            //find the experience we want to delete from the received profile.
+            //map all the experiences and get the index of the element we wat to delete
+
+            const removeIndex = profile.experience
+                .map(item => item.id)
+                .indexOf(req.params.exp_id);
+
+            //splice the element in the given index
+            profile.experience.splice(removeIndex, 1);
+
+            //save
+            profile
+                .save()
+                .then(profile => res.json(profile))
+                .catch(err => res.status(404).json(err));
+        });
+    }
+);
+
 module.exports = router;
