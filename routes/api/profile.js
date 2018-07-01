@@ -275,4 +275,49 @@ router.delete(
     }
 );
 
+//@route    DELETE api/profile/experience/:edu_id
+//@desc     delete education from profile
+//@access   private (requires user to be logged in)
+router.delete(
+    "/education/:edu_id",
+    passPort.authenticate("jwt", {session: false}),
+    (req, res) => {
+        //first, find the profile we want to take the experience from
+
+        Profile.findOne({user: req.user.id}).then(profile => {
+            //find the experience we want to delete from the received profile.
+            //map all the experiences and get the index of the element we wat to delete
+
+            const removeIndex = profile.education
+                .map(item => item.id)
+                .indexOf(req.params.edu_id);
+
+            //splice the element in the given index
+            profile.education.splice(removeIndex, 1);
+
+            //save
+            profile
+                .save()
+                .then(profile => res.json(profile))
+                .catch(err => res.status(404).json(err));
+        });
+    }
+);
+
+//@route    DELETE api/profile/
+//@desc     delete the user and the corresponding profile
+//@access   private (requires user to be logged in)
+router.delete(
+    "/",
+    passPort.authenticate("jwt", {session: false}),
+    (req, res) => {
+        //find the Profile corresponding to the given id
+        Profile.findOneAndRemove({user: req.user.id}).then(() => {
+            //find the user given its _id
+            User.findOneAndRemove({_id: req.user.id}).then(() =>
+                res.json({success: true})
+            );
+        });
+    }
+);
 module.exports = router;

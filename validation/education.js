@@ -14,8 +14,8 @@ module.exports = function validateEducation(data) {
     data.to = !isEmpty(data.to) ? data.to : "";
 
     /*The way validator works, is checking if the given input complies with the method(isEmail, isLength..)
-            if so, return true
-            - input to be check must be a string*/
+              if so, return true
+              - input to be check must be a string*/
     if (validator.isEmpty(data.school)) {
         errors.school = "Please the name of your school, or type self-taught.";
     }
