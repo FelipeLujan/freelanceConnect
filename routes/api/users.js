@@ -63,7 +63,7 @@ router.post("/register", (req, res) => {
             //saves to MLAB
             .then(user => res.json(user))
             //if saved, res (show up) the user object
-            .catch(err => console.log(err));
+            .catch(err => console.log(err.response.data));
           //otherwise, console.log() the error
         });
       });
