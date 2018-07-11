@@ -3,6 +3,11 @@ import React, { Component } from "react";
 //libraries
 import axios from "axios"; // use the proxy to send http requests
 import classnames from "classnames"; // add classes to html tags (ngIf)
+import { connect } from "react-redux"; //a component connected to react-redux is often called a container
+import propTypes from "prop-types";
+
+//Actions
+import { registerUser } from "../../actions/authActions";
 
 class Register extends Component {
   //unless redux is implemented, component state must be set.
@@ -42,19 +47,26 @@ class Register extends Component {
 
     //the back end returns the user if the post request is successful.
     //or the errors if .catch(), if i get an error, i send it to state
-    axios
-      .post("/api/users/register", newUser)
-      .then(res => console.log(res.data))
-      //currently res.data is the data sent by the back end
-      .catch(err => this.setState({ errors: err.response.data }));
+
+    // axios
+    //   .post("/api/users/register", newUser)
+    //   .then(res => console.log(res.data))
+    //   //currently res.data is the data sent by the back end
+    //   .catch(err => this.setState({ errors: err.response.data }));
+
+    /*ACTIOOOOOOOOON*/
+    /*now every action that is imported will be in this.props*/
+    this.props.registerUser(newUser);
   }
 
   render() {
     //  const errors = this.state.errors is the same than
-    const { errors } = this.state;
+    const errors = this.state.errors;
+    const user = this.props.auth.user;
 
     return (
       <div className="register">
+        {user ? user.name : null}
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
@@ -150,4 +162,22 @@ class Register extends Component {
   }
 }
 
-export default Register;
+Register.propTypes = {
+  registerUser: propTypes.func.isRequired,
+  auth: propTypes.object.isRequired
+};
+
+//get stuff from state into component
+const mapStateToProps = state => ({
+  //Here i choose what to get from state into this component
+  //sooo
+  //this.props.auth now contains the user object, so i could
+  // this.props.user.name gives back the name
+  auth: state.auth
+});
+
+//export default connect (null, {<object mapping actions>})(<component>)
+export default connect(
+  mapStateToProps,
+  { registerUser }
+)(Register);
