@@ -8,6 +8,8 @@ import thunk from "redux-thunk";
 import rootReducer from "./reducers"; //index.js is called automatically from ./reducers
 
 const middleware = [thunk];
+
+//initial state is empty
 const initialState = {};
 
 //createStore()  =  [reducer],{initialState}, middleware()
