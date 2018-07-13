@@ -169,11 +169,12 @@ Register.propTypes = {
 
 //get stuff from state into component
 const mapStateToProps = state => ({
-  //Here i choose what to get from state into this component
+  //Here i choose what to get from state into this component (as props)
   //sooo
   //this.props.auth now contains the user object, so i could
   // this.props.user.name gives back the name
-  auth: state.auth
+  auth: state.auth,
+  errors: state.error
 });
 
 //export default connect (null, {<object mapping actions>})(<component>)
