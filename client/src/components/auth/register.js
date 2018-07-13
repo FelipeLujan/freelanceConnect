@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 //libraries
-import axios from "axios"; // use the proxy to send http requests
 import classnames from "classnames"; // add classes to html tags (ngIf)
 import { connect } from "react-redux"; //a component connected to react-redux is often called a container
 import propTypes from "prop-types";
+import { withRouter } from "react-router-dom"; // to redirect on prop receive
 
 //Actions
 import { registerUser } from "../../actions/authActions";
@@ -25,6 +25,14 @@ class Register extends Component {
     this.onChange = this.onChange.bind(this);
 
     this.onSubmit = this.onSubmit.bind(this);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    //when this components gets props though mapStateToProps
+    //check out if the errors prop was received
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
   }
 
   onChange(event) {
@@ -56,17 +64,17 @@ class Register extends Component {
 
     /*ACTIOOOOOOOOON*/
     /*now every action that is imported will be in this.props*/
-    this.props.registerUser(newUser);
+
+    //this
+    this.props.registerUser(newUser, this.props.history);
   }
 
   render() {
     //  const errors = this.state.errors is the same than
     const errors = this.state.errors;
-    const user = this.props.auth.user;
 
     return (
       <div className="register">
-        {user ? user.name : null}
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
@@ -164,7 +172,8 @@ class Register extends Component {
 
 Register.propTypes = {
   registerUser: propTypes.func.isRequired,
-  auth: propTypes.object.isRequired
+  auth: propTypes.object.isRequired,
+  errors: propTypes.object.isRequired
 };
 
 //get stuff from state into component
@@ -181,4 +190,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { registerUser }
-)(Register);
+)(withRouter(Register));

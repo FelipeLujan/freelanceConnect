@@ -6,10 +6,10 @@ import { GET_ERRORS } from "./types";
 
 //this is an action creator
 //This will dispatch userdata to the reducer that takes the type TEST_DISPATCH
-export const registerUser = userData => dispatch => {
+export const registerUser = (userData, history) => dispatch => {
   axios
     .post("/api/users/register", userData)
-    .then(res => console.log(res.data))
+    .then(res => history.push("/login"))
     //currently res.data is the data sent by the back end
     .catch(err =>
       dispatch({
