@@ -30,6 +30,7 @@ class Register extends Component {
   componentWillReceiveProps(nextProps) {
     //when this components gets props though mapStateToProps
     //check out if the errors prop was received
+    console.log(this.props.errors);
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
     }
@@ -183,7 +184,7 @@ const mapStateToProps = state => ({
   //this.props.auth now contains the user object, so i could
   // this.props.user.name gives back the name
   auth: state.auth,
-  errors: state.error
+  errors: state.errors
 });
 
 //export default connect (null, {<object mapping actions>})(<component>)

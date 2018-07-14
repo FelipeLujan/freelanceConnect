@@ -21,6 +21,22 @@ import Landing from "./components/layout/Landing";
 import Register from "./components/auth/register";
 import Login from "./components/auth/login";
 
+import jwt_decode from "jwt-decode";
+import setAuthToken from "./utils/setAuthToken";
+import { setCurrentUser } from "./actions/authActions";
+
+//in order to hace the user info and JWT token available anywhere the user goes
+//it's needed to set up the auth state from localstorage
+// check for token in localstorage
+if (localStorage.jwtToken) {
+  //if  localstorage.jtoToken exists (fill up the axios header)
+  setAuthToken(localStorage.jwtToken);
+  //decode and dispatch auth and isAuthenticated to state
+  const decoded = jwt_decode(localStorage.jwtToken);
+  setCurrentUser(decoded);
+  store.dispatch(setCurrentUser(decoded));
+}
+
 store;
 class App extends Component {
   render() {

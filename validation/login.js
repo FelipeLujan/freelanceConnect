@@ -21,7 +21,7 @@ function validateLoginInput(data) {
     errors.email = "Please enter a correct E-mail.";
   }
   if (validator.isEmpty(data.password)) {
-    errors.password = "Uhhmm... your profile needs a password, right?";
+    errors.password = "Please enter your password in order to log in.";
   }
   if (!validator.isLength(data.password, { min: 6, max: 30 })) {
     errors.password = "Your password needs to be at least 6 characters.";
