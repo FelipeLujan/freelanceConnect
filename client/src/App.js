@@ -23,9 +23,9 @@ import Login from "./components/auth/login";
 
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
-import { setCurrentUser } from "./actions/authActions";
+import { logoutUser, setCurrentUser } from "./actions/authActions";
 
-//in order to hace the user info and JWT token available anywhere the user goes
+//in order to have the user info and JWT token available anywhere the user goes
 //it's needed to set up the auth state from localstorage
 // check for token in localstorage
 if (localStorage.jwtToken) {
@@ -35,9 +35,18 @@ if (localStorage.jwtToken) {
   const decoded = jwt_decode(localStorage.jwtToken);
   setCurrentUser(decoded);
   store.dispatch(setCurrentUser(decoded));
+
+  // also
+  //log the user out once the jwt expires
+  const currentTime = Date.now() / 1000;
+  if (decoded.exp < currentTime) {
+    store.dispatch(logoutUser());
+    //TODO: Clear current profile
+    //redirect to login
+    window.location.href = "/login";
+  }
 }
 
-store;
 class App extends Component {
   render() {
     return (
