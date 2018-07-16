@@ -5,9 +5,6 @@ import "./App.css";
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-//REDUX
-import { applyMiddleware, createStore } from "redux";
-
 //react-redux
 import { Provider } from "react-redux";
 
@@ -20,10 +17,15 @@ import Footer from "./components/layout/Footer";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/register";
 import Login from "./components/auth/login";
+import Dashboard from "./components/dashboard/Dashboard";
 
+//auth
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 import { logoutUser, setCurrentUser } from "./actions/authActions";
+
+//profile
+import { clearCurrentProfile } from "./actions/profileActions";
 
 //in order to have the user info and JWT token available anywhere the user goes
 //it's needed to set up the auth state from localstorage
@@ -41,7 +43,8 @@ if (localStorage.jwtToken) {
   const currentTime = Date.now() / 1000;
   if (decoded.exp < currentTime) {
     store.dispatch(logoutUser());
-    //TODO: Clear current profile
+    //Clear current profile
+    store.dispatch(clearCurrentProfile());
     //redirect to login
     window.location.href = "/login";
   }
@@ -58,6 +61,7 @@ class App extends Component {
             <div className="container">
               <Route exact component={Register} path="/register" />
               <Route exact component={Login} path="/login" />
+              <Route exact component={Dashboard} path="/dashboard"/>
             </div>
             <Footer />
           </div>

@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 
 //libraries
-import classnames from "classnames"; // add classes to html tags (ngIf)
 import { connect } from "react-redux"; //a component connected to react-redux is often called a container
 import propTypes from "prop-types";
 import { withRouter } from "react-router-dom"; // to redirect on prop receive
 
 //Actions
 import { registerUser } from "../../actions/authActions";
+
+//components
+import TextFieldGroup from "../common/TextFieldGroup";
 
 class Register extends Component {
   //unless redux is implemented, component state must be set.
@@ -92,80 +94,62 @@ class Register extends Component {
               </p>
 
               <form onSubmit={this.onSubmit}>
-                <div className="form-group">
-                  {/*====NAME====*/}
-                  <input
-                    type="text"
-                    className={classnames("form-control form-control-lg", {
-                      "is-invalid": errors.name
-                      //classnames ('default_classes', 'conditional_class':condition<boolean>)
-                    })}
-                    placeholder="Name"
-                    name="name"
-                    value={this.state.name}
-                    onChange={this.onChange}
-                  />
+                <TextFieldGroup
+                  placeholder="Name."
+                  name="name"
+                  value={this.state.name}
+                  onChange={this.onChange}
+                  error={errors.name}
+                />
 
-                  {errors.name && (
-                    <div className="invalid-feedback">{errors.name}</div>
-                  )}
-                </div>
+                {/*<div className="form-group">*/}
+                {/*/!*====NAME====*!/*/}
+                {/*<input*/}
+                {/*type="text"*/}
+                {/*className={classnames("form-control form-control-lg", {*/}
+                {/*"is-invalid": errors.name*/}
+                {/*//classnames ('default_classes', 'conditional_class':condition<boolean>)*/}
+                {/*})}*/}
+                {/*placeholder="Name"*/}
+                {/*name="name"*/}
+                {/*value={this.state.name}*/}
+                {/*onChange={this.onChange}*/}
+                {/*/>*/}
 
-                <div className="form-group">
-                  {/*====EMAIL====*/}
-                  <input
-                    type="email"
-                    className={classnames("form-control form-control-lg", {
-                      "is-invalid": errors.email
-                    })}
-                    placeholder="Email Address"
-                    name="email"
-                    value={this.state.email}
-                    onChange={this.onChange}
-                  />
-                  {errors.email && (
-                    <div className="invalid-feedback">{errors.email}</div>
-                  )}
-                  <small className="form-text text-muted">
-                    This site uses Gravatar so if you want a profile image, use
-                    a Gravatar email
-                  </small>
-                </div>
+                {/*{errors.name && (*/}
+                {/*<div className="invalid-feedback">{errors.name}</div>*/}
+                {/*)}*/}
+                {/*</div>*/}
 
-                <div className="form-group">
-                  {/*====PASSWORD====*/}
-                  <input
-                    type="password"
-                    className={classnames("form-control form-control-lg", {
-                      "is-invalid": errors.password
-                    })}
-                    placeholder="Password"
-                    name="password"
-                    value={this.state.password}
-                    onChange={this.onChange}
-                  />
+                <TextFieldGroup
+                  placeholder="Please enter your email."
+                  name="email"
+                  type={"email"}
+                  value={this.state.email}
+                  onChange={this.onChange}
+                  error={errors.email}
+                  info={
+                    "This site uses Gravatar so if you want a profile image, use a Gravatar email"
+                  }
+                />
 
-                  {errors.password && (
-                    <div className="invalid-feedback">{errors.password}</div>
-                  )}
-                </div>
+                <TextFieldGroup
+                  placeholder="Password."
+                  name="password"
+                  type={"password"}
+                  value={this.state.password}
+                  onChange={this.onChange}
+                  error={errors.password}
+                />
 
-                <div className="form-group">
-                  {/*====PASSWORD2====*/}
-                  <input
-                    type="password"
-                    className={classnames("form-control form-control-lg", {
-                      "is-invalid": errors.password2
-                    })}
-                    placeholder="Confirm Password"
-                    name="password2"
-                    value={this.state.password2}
-                    onChange={this.onChange}
-                  />
-                  {errors.password2 && (
-                    <div className="invalid-feedback">{errors.password2}</div>
-                  )}
-                </div>
+                <TextFieldGroup
+                  placeholder="Please confirm your password."
+                  name="password2"
+                  type={"password"}
+                  value={this.state.password2}
+                  onChange={this.onChange}
+                  error={errors.password2}
+                />
 
                 <input type="submit" className="btn btn-info btn-block mt-4" />
               </form>

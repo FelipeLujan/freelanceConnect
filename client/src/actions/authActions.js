@@ -7,6 +7,7 @@ import { GET_ERRORS, SET_CURRENT_USER } from "./types";
 
 //Import Utils
 import setAuthToken from "../utils/setAuthToken";
+import { clearCurrentProfile } from "./profileActions";
 
 //this is an action creator
 //This will dispatch userdata to the reducer that takes the type TEST_DISPATCH

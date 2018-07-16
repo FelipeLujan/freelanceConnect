@@ -24,7 +24,7 @@ const TextFieldGroup = ({
         placeholder={placeholder}
         name={name}
         value={value}
-        onChange={value}
+        onChange={onChange}
         disabled={disabled}
       />
       {/*some fields will have and info field which describe what that field is for*/}
