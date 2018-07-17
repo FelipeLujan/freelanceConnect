@@ -1,10 +1,5 @@
 import axios from "axios";
-import {
-  CLEAR_CURRENT_PROFILE,
-  GET_ERRORS,
-  GET_PROFILE,
-  PROFILE_LOADING
-} from "./types";
+import { CLEAR_CURRENT_PROFILE, GET_PROFILE, PROFILE_LOADING } from "./types";
 
 //get current profile
 export const getCurrentProfile = () => dispatch => {
@@ -34,6 +29,10 @@ export const getCurrentProfile = () => dispatch => {
 //profile loading
 export const setProfileLoading = () => {
   return {
+    //setProfileLoading action is called as soon as the user tries to log in
+    // this method dispatches the PROFILE_LOADING reducer, which turns loading to true,
+    //when the axios gets the profile, the GET_PROFILE action is dispatched.
+    //which sets loading to false (and populates profile state)
     type: PROFILE_LOADING
   };
 };

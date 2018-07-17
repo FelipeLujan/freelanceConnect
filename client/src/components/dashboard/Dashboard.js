@@ -3,25 +3,49 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { getCurrentProfile } from "../../actions/profileActions";
 
-class dashboard extends Component {
+class Dashboard extends Component {
   componentDidMount() {
     this.props.getCurrentProfile();
   }
 
   render() {
+    const { user } = this.props.auth;
+    const { profile, loading } = this.props.profile;
+
+    let dashBoardContent;
+
+    if (profile === null || loading === true) {
+      dashBoardContent = <h4>Loading</h4>;
+    } else {
+      dashBoardContent = <h1>Hello</h1>;
+    }
     return (
-      <div>
-        <h1>dashboard</h1>
+      <div className={"dashboard"}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h1 className="display-4">Dashboard</h1>
+            </div>
+            {dashBoardContent}
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-function mapStateToProps(state) {
-  return {};
-}
+Dashboard.propTypes = {
+  getCurrentProfile: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  profile: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  profile: state.profile,
+  auth: state.auth
+});
 
 export default connect(
   mapStateToProps,
   { getCurrentProfile }
-)(dashboard);
+)(Dashboard);
