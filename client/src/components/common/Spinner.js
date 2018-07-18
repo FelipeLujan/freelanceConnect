@@ -1,6 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
-import spinner from "./loading_spinner.gif";
+import spinner from "./Spinner.gif";
 
 const MyComponent = () => {
   return (

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="--write $FilePathRelativeToProjectRoot$" />
+      <option name="arguments" value=" --write [other options] $FilePathRelativeToProjectRoot$" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
@@ -14,7 +14,7 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
-      <option name="program" value="/usr/local/lib/node_modules/prettier/bin-prettier.js" />
+      <option name="program" value="$USER_HOME$/AppData/Roaming/npm/prettier.cmd" />
       <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="All Places" />
       <option name="trackOnlyRoot" value="false" />

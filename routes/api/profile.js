@@ -43,7 +43,7 @@ router.get(
         res.json(profile);
       })
       .catch(err => {
-        console.log("an error has occured", err);
+        console.log("an error has occurred", err);
       });
   }
 );

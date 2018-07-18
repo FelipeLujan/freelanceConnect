@@ -61,7 +61,7 @@ class App extends Component {
             <div className="container">
               <Route exact component={Register} path="/register" />
               <Route exact component={Login} path="/login" />
-              <Route exact component={Dashboard} path="/dashboard"/>
+              <Route exact component={Dashboard} path="/dashboard" />
             </div>
             <Footer />
           </div>

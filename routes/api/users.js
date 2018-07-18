@@ -102,7 +102,7 @@ router.post("/login", (req, res) => {
         //  sign token because user matched
         const payload = {
           id: user.id,
-          name: user.avatar,
+          name: user.name,
           avatar: user.avatar
         };
 
