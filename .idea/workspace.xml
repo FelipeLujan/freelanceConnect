@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/PrivateRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/common/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/common/PrivateRoute.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -79,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
-              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -123,25 +124,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrivateRoute.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/common/PrivateRoute.js">
+      <file leaf-file-name="CreateProfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="303">
+              <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="68" column="23" lean-forward="true" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-              <folding>
-                <element signature="e#48#89#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,6 +143,7 @@
       <list>
         <option value="HTTP Request" />
         <option value="JavaScript File" />
+        <option value="AMD JavaScript File" />
       </list>
     </option>
   </component>
@@ -182,7 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/localhost.http" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" />
         <option value="$PROJECT_DIR$/routes/api/api.http" />
@@ -233,6 +222,7 @@
         <option value="$PROJECT_DIR$/routes/api/users.js" />
         <option value="$PROJECT_DIR$/client/src/components/PrivateRoute.js" />
         <option value="$PROJECT_DIR$/client/src/App.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" />
       </list>
     </option>
   </component>
@@ -291,6 +281,21 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="freelanceConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="freelanceConnect" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="freelanceConnect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="freelanceConnect" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Create-Profile" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -314,7 +319,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -593,6 +598,7 @@
       <workItem from="1531801358633" duration="2010000" />
       <workItem from="1531880237514" duration="3759000" />
       <workItem from="1532063776616" duration="15000" />
+      <workItem from="1532144886600" duration="1774000" />
     </task>
     <task id="LOCAL-00001" summary="export re-written&#10;&#10;deleted route&#10;api/profile/tests &#10;&#10;added&#10;GET api/profile/all&#10;GET api/profile/handle/:handle&#10;GET api/profile/user/:user_id&#10;&#10;fixed&#10;social networks formation">
       <created>1530238110687</created>
@@ -818,11 +824,25 @@
       <option name="project" value="LOCAL" />
       <updated>1531881934523</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Auth check middleware, Switch imported from react-router-dom">
+      <created>1532144951665</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1532144951665</updated>
+    </task>
+    <task id="LOCAL-00034" summary="create profile component initialized">
+      <created>1532145294840</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1532145294840</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225379000" />
+    <option name="totallyTimeSpent" value="227153000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,15 +857,15 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5330033" visible="true" weight="0.1762481" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5314534" visible="true" weight="0.1762481" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.24180967" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5281583" side_tool="true" weight="0.2901716" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.23927392" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.23927392" />
+      <window_info id="npm" order="2" sideWeight="0.46854663" side_tool="true" weight="0.1762481" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4718417" weight="0.3069307" />
-      <window_info id="npm" order="2" sideWeight="0.4669967" side_tool="true" visible="true" weight="0.1762481" />
       <window_info id="Structure" order="1" sideWeight="0.55737704" side_tool="true" weight="0.1697831" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49695587" weight="0.28052804" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49695587" weight="0.27887788" />
       <window_info anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.18381241" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39901477" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -895,8 +915,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="extra document bug fixed" />
-    <MESSAGE value="education validation added" />
     <MESSAGE value="education route and validation implemented" />
     <MESSAGE value="delete education implemented" />
     <MESSAGE value="delete experience and education added" />
@@ -920,7 +938,9 @@
     <MESSAGE value="TextFieldGroup component created" />
     <MESSAGE value="removed classnames, those are now in the TextFieldGroup component" />
     <MESSAGE value="state into dashboard, spinner component" />
-    <option name="LAST_COMMIT_MESSAGE" value="state into dashboard, spinner component" />
+    <MESSAGE value="Auth check middleware, Switch imported from react-router-dom" />
+    <MESSAGE value="create profile component initialized" />
+    <option name="LAST_COMMIT_MESSAGE" value="create profile component initialized" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -966,7 +986,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/collection.js" />
     <entry file="file://$PROJECT_DIR$/models/Profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1788">
@@ -1262,7 +1281,7 @@
     <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -1313,6 +1332,18 @@
           <caret line="68" column="23" lean-forward="true" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
           <folding>
             <element signature="e#48#89#0" expanded="true" />
+            <element signature="e#272#320#0" expanded="true" />
+            <element signature="e#583#619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3,7 +3,7 @@ import "./App.css";
 
 //React Libraries
 import React, { Component } from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //react-redux
 import { Provider } from "react-redux";
@@ -64,9 +64,9 @@ class App extends Component {
             <div className="container">
               <Route exact component={Register} path="/register" />
               <Route exact component={Login} path="/login" />
-                <Switch>
-                    <PrivateRoute exact component={Dashboard} path="/dashboard"/>
-                </Switch>
+              <Switch>
+                <PrivateRoute exact component={Dashboard} path="/dashboard" />
+              </Switch>
             </div>
             <Footer />
           </div>
