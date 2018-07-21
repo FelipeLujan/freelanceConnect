@@ -3,7 +3,7 @@ import "./App.css";
 
 //React Libraries
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 //react-redux
 import { Provider } from "react-redux";
@@ -26,6 +26,9 @@ import { logoutUser, setCurrentUser } from "./actions/authActions";
 
 //profile
 import { clearCurrentProfile } from "./actions/profileActions";
+
+//guard for private routes
+import PrivateRoute from "./components/common/PrivateRoute";
 
 //in order to have the user info and JWT token available anywhere the user goes
 //it's needed to set up the auth state from localstorage
@@ -61,7 +64,9 @@ class App extends Component {
             <div className="container">
               <Route exact component={Register} path="/register" />
               <Route exact component={Login} path="/login" />
-              <Route exact component={Dashboard} path="/dashboard" />
+                <Switch>
+                    <PrivateRoute exact component={Dashboard} path="/dashboard"/>
+                </Switch>
             </div>
             <Footer />
           </div>
