@@ -29,6 +29,7 @@ import { clearCurrentProfile } from "./actions/profileActions";
 
 //guard for private routes
 import PrivateRoute from "./components/common/PrivateRoute";
+import CreateProfile from "./components/Create-Profile/CreateProfile";
 
 //in order to have the user info and JWT token available anywhere the user goes
 //it's needed to set up the auth state from localstorage
@@ -66,6 +67,13 @@ class App extends Component {
               <Route exact component={Login} path="/login" />
               <Switch>
                 <PrivateRoute exact component={Dashboard} path="/dashboard" />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  component={CreateProfile}
+                  path="/create-profile"
+                />
               </Switch>
             </div>
             <Footer />

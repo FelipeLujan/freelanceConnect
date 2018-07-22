@@ -1,52 +1,53 @@
 import React from "react";
 import PropTypes from "prop-types";
-import classnames from "classnames";
+import Classnames from "classnames";
 
-const TextFieldGroup = ({
-  //these are the props received from the parent component calling SelectListGroup
-  type,
+const SelectListGroup = ({
   name,
   placeholder,
   value,
-  label,
   error,
   info,
   onChange,
-  disabled
+  options
 }) => {
+  const selectOptions = options.map(option => (
+    <option value={option.value} key={option.label}>
+      {option.label}
+    </option>
+  ));
   return (
     <div className="form-group">
-      <input
-        type={type}
-        className={classnames("form-control form-control-lg", {
+      {/*text areas dont need closing tag in react...*/}
+      <select
+        className={Classnames("form-control form-control-lg", {
           "is-invalid": error
         })}
         placeholder={placeholder}
         name={name}
         value={value}
         onChange={onChange}
-        disabled={disabled}
-      />
-      {/*some fields will have and info field which describe what that field is for*/}
+      >
+        {selectOptions}
+      </select>
+
       {info && <small className="form-text text-muted">{info}</small>}
       {{ error } && <div className="invalid-feedback">{error}</div>}
     </div>
   );
 };
 
-TextFieldGroup.propTypes = {
+SelectListGroup.propTypes = {
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   value: PropTypes.string.isRequired,
-  info: PropTypes.string,
   error: PropTypes.string,
-  type: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  disable: PropTypes.string
+  options: PropTypes.array.isRequired
 };
 
-TextFieldGroup.defaultProps = {
+SelectListGroup.defaultProps = {
   type: "text"
 };
 
-export default TextFieldGroup;
+export default SelectListGroup;
