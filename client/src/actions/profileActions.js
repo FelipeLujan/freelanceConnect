@@ -53,7 +53,8 @@ export const clearCurrentProfile = () => {
 export const createProfile = (profileData, history) => dispatch => {
   axios
     .post("/api/profile", profileData)
-    .then(history.push("/dashboard"))
+    //if i put history.push("/dashboard") alone, both the .then() and .catch() will be executed
+    .then(res => history.push("/dashboard"))
     .catch(err =>
       dispatch({
         type: GET_ERRORS,

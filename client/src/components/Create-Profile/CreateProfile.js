@@ -5,14 +5,10 @@ import TextFieldGroup from "../common/TextFieldGroup";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
 import InputGroup from "../common/inputGroup";
 import SelectListGroup from "../common/SelectListGroupGroup";
+import { createProfile } from "../../actions/profileActions";
+import { withRouter } from "react-router-dom";
 
 class CreateProfile extends Component {
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.errors) {
-      this.setState({ errors: nextProps.errors });
-    }
-  }
-
   constructor(props) {
     super(props);
     this.state = {
@@ -32,17 +28,42 @@ class CreateProfile extends Component {
       errors: {}
     };
 
-      //gitlog test
+    //gitlog test
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  /*END CONSTRUCTOR*/
+
+  componentWillReceiveProps(nextProps, nextState) {
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
+    console.log(nextProps.errors);
+  }
+
   onSubmit(event) {
     event.preventDefault();
+    const profileData = {
+      handle: this.state.handle,
+      company: this.state.company,
+      website: this.state.website,
+      location: this.state.location,
+      status: this.state.status,
+      skills: this.state.skills,
+      githubusername: this.state.githubusername,
+      bio: this.state.bio,
+      twitter: this.state.twitter,
+      linkedin: this.state.linkedin,
+      facebook: this.state.facebook,
+      youtube: this.state.youtube,
+      instagram: this.state.instagram
+    };
+    this.props.createProfile(profileData, this.props.history);
   }
 
   onChange(event) {
-    this.setState({ [event.target.name]: [event.target.value] });
+    this.setState({ [event.target.name]: event.target.value });
   }
 
   render() {
@@ -92,7 +113,7 @@ class CreateProfile extends Component {
       );
     }
 
-    //select option for statis
+    //select option for status
     const options = [
       {
         label: "Select professional Status",
@@ -142,17 +163,17 @@ class CreateProfile extends Component {
                 {/*handle*/}
                 <TextFieldGroup
                   placeholder={"Nickname"}
-                  name={"handle"}
+                  name="handle"
                   value={this.state.handle}
                   onChange={this.onChange}
                   error={errors.handle}
                   info={
-                    "A unique handle  for your profile (AKA username/avatar/nickname) "
+                    "A unique handle for your profile (AKA username/avatar/nickname) "
                   }
                 />
-                {/*Sekect*/}
+                {/*Select*/}
                 <SelectListGroup
-                  name={"Status"}
+                  name={"status"}
                   value={this.state.status}
                   onChange={this.onChange}
                   error={errors.status}
@@ -214,6 +235,7 @@ class CreateProfile extends Component {
 
                 <div className="bm-3">
                   <button
+                    type="button"
                     onClick={() => {
                       this.setState(prevState => ({
                         displaySocialInputs: !prevState.displaySocialInputs
@@ -250,4 +272,7 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(mapStateToProps)(CreateProfile);
+export default connect(
+  mapStateToProps,
+  { createProfile }
+)(withRouter(CreateProfile));
