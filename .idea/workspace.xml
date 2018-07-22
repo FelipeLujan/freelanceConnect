@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" line="245" mnemonic="7" />
-    <bookmark url="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" line="213" />
+    <bookmark url="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" line="247" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" line="215" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/SelectListGroupGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/inputGroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/profileActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/profileActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/common/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/common/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,12 +56,11 @@
       <file leaf-file-name="CreateProfile.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state relative-caret-position="612">
+              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#2215#2888#0" />
-                <element signature="e#2909#7098#0" />
+                <element signature="e#3042#7231#0" />
               </folding>
             </state>
           </provider>
@@ -190,11 +181,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-1088" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1313" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -259,7 +250,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -541,7 +532,7 @@
       <workItem from="1532063776616" duration="15000" />
       <workItem from="1532144886600" duration="9070000" />
       <workItem from="1532184698489" duration="36000" />
-      <workItem from="1532198790061" duration="9904000" />
+      <workItem from="1532198790061" duration="10447000" />
     </task>
     <task id="LOCAL-00001" summary="export re-written&#10;&#10;deleted route&#10;api/profile/tests &#10;&#10;added&#10;GET api/profile/all&#10;GET api/profile/handle/:handle&#10;GET api/profile/user/:user_id&#10;&#10;fixed&#10;social networks formation">
       <created>1530238110687</created>
@@ -788,11 +779,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532146694096</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="component for profile creation completed">
+      <created>1532224340958</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1532224340958</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244389000" />
+    <option name="totallyTimeSpent" value="244932000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -804,19 +802,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-1080" width="1313" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52916664" visible="true" weight="0.1076759" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52916664" visible="true" weight="0.16121309" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.24180967" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5281583" side_tool="true" weight="0.2901716" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.23927392" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4718417" visible="true" weight="0.15359478" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.23856209" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4718417" weight="0.15359478" />
       <window_info id="npm" order="2" sideWeight="0.47181627" side_tool="true" weight="0.15349545" />
       <window_info id="Structure" order="1" sideWeight="0.55737704" side_tool="true" weight="0.1697831" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49695587" weight="0.27887788" />
-      <window_info anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.17697228" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49695587" weight="0.28162816" />
+      <window_info active="true" anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.26496407" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39901477" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -865,7 +863,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="delete education implemented" />
     <MESSAGE value="delete experience and education added" />
     <MESSAGE value="Post route and validation created" />
     <MESSAGE value="Create-react-app initialized" />
@@ -890,7 +887,8 @@
     <MESSAGE value="Auth check middleware, Switch imported from react-router-dom" />
     <MESSAGE value="create profile component initialized" />
     <MESSAGE value="initial state" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial state" />
+    <MESSAGE value="component for profile creation completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="component for profile creation completed" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1292,12 +1290,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        <state relative-caret-position="612">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#2215#2888#0" />
-            <element signature="e#2909#7098#0" />
+            <element signature="e#3042#7231#0" />
           </folding>
         </state>
       </provider>

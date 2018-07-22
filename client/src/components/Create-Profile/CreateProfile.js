@@ -32,6 +32,7 @@ class CreateProfile extends Component {
       errors: {}
     };
 
+      //gitlog test
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
