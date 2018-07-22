@@ -1,9 +1,13 @@
+//libraries
 import axios from "axios";
+
+//React-redux actions
 import {
   CLEAR_CURRENT_PROFILE,
   GET_ERRORS,
   GET_PROFILE,
-  PROFILE_LOADING
+  PROFILE_LOADING,
+  SET_CURRENT_USER
 } from "./types";
 
 //get current profile
@@ -29,6 +33,33 @@ export const getCurrentProfile = () => dispatch => {
         payload: {}
       })
     );
+};
+
+//Delete user and all its profile
+export const deleteAccount = () => dispatch => {
+  if (
+    window.confirm(
+      "Are your sure you want to delete your profile? This CANNOT be undone!"
+    )
+  ) {
+    axios
+      .delete("/api/profile/")
+      .then(res =>
+        //instead of deleting, the logged in user is being set to and empty object, later on it'll be deleted from the DB
+        dispatch({
+          type: SET_CURRENT_USER,
+          payload: {}
+        })
+      )
+      .catch(err =>
+        dispatch({
+          type: GET_ERRORS,
+          payload: err.response.data
+        })
+      );
+  }
+
+  axios.delete("/api/profile/");
 };
 
 //profile loading
