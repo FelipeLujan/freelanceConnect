@@ -45,7 +45,7 @@ export const deleteAccount = () => dispatch => {
     axios
       .delete("/api/profile/")
       .then(res =>
-        //instead of deleting, the logged in user is being set to and empty object, later on it'll be deleted from the DB
+        //after sending the delete request, the current user is set to and empty object, meaning the  user is log out
         dispatch({
           type: SET_CURRENT_USER,
           payload: {}
