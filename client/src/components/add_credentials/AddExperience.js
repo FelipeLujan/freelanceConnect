@@ -3,9 +3,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
+
 //Components
 import TextFieldGroup from "../common/TextFieldGroup";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
+
+//actions
+import { addExperience } from "../../actions/profileActions";
 
 //after i send the form, an action is called, in order to redirect after sending the action, with Router is needed
 
@@ -28,8 +32,26 @@ class AddExperience extends Component {
     this.onCheck = this.onCheck.bind(this);
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.errors !== this.props.errors) {
+      this.setState({ errors: this.props.errors });
+    }
+  }
+
   onSubmit(event) {
     event.preventDefault();
+    const expData = {
+      company: this.state.company,
+      title: this.state.title,
+      location: this.state.location,
+      from: this.state.from,
+      to: this.state.to,
+      current: this.state.current,
+      description: this.state.description
+    };
+
+    //this action will redirect upon submitting, this is why withRouter is required
+    this.props.addExperience(expData, this.props.history);
   }
 
   onChange(event) {
@@ -116,21 +138,20 @@ class AddExperience extends Component {
                   <label htmlFor="current" className="form-check-label">
                     Current Job
                   </label>
-                  <TextAreaFieldGroup
-                    placeholder={"Job Description"}
-                    name={"description"}
-                    value={this.state.description}
-                    onChange={this.onChange}
-                    error={errors.description}
-                    info={"Let us now what you used to do in that job."}
-                  >
-                    <input
-                      type="submit"
-                      value={"submit"}
-                      className={"btn btn-block btn-info mt-4"}
-                    />
-                  </TextAreaFieldGroup>
                 </div>
+                <TextAreaFieldGroup
+                  placeholder={"Job Description"}
+                  name={"description"}
+                  value={this.state.description}
+                  onChange={this.onChange}
+                  error={errors.description}
+                  info={"Let us now what you used to do in that job."}
+                />
+                <input
+                  type="submit"
+                  value={"submit"}
+                  className={"btn btn-block btn-info mt-4"}
+                />
               </form>
             </div>
           </div>
@@ -141,7 +162,11 @@ class AddExperience extends Component {
 }
 
 function mapStateToProps(state) {
-  return { profile: state.profile, errors: state.errors };
+  return {
+    profile: state.profile,
+    errors: state.errors,
+    addExperience: PropTypes.func.isRequired
+  };
 }
 
 AddExperience.propTypes = {
@@ -149,4 +174,7 @@ AddExperience.propTypes = {
   profile: PropTypes.object.isRequired
 };
 
-export default connect(mapStateToProps)(withRouter(AddExperience));
+export default connect(
+  mapStateToProps,
+  { addExperience }
+)(withRouter(AddExperience));

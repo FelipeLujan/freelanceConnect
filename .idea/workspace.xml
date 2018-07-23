@@ -8,7 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/profileActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/profileActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,8 +61,8 @@
       <file leaf-file-name="EditProfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="423">
+              <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="54" selection-end-column="5" />
               <folding>
                 <element signature="e#12#53#0" expanded="true" />
                 <element signature="e#190#251#0" expanded="true" />
@@ -68,21 +71,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddExperience.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddExperience.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="AddEducation.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="NavBar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/layout/NavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+            <state relative-caret-position="327">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="e#12#53#0" expanded="true" />
+                <element signature="e#196#250#0" expanded="true" />
+                <element signature="n#!!block;n#render#0;n#AddExperience#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profileActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/actions/profileActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="96" column="16" lean-forward="true" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+              <folding>
+                <element signature="e#62#180#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+              <folding>
+                <element signature="e#272#320#0" expanded="true" />
+                <element signature="e#583#619#0" expanded="true" />
+                <element signature="e#840#900#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,13 +194,13 @@
         <option value="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" />
         <option value="$PROJECT_DIR$/client/src/actions/types.js" />
-        <option value="$PROJECT_DIR$/client/src/actions/profileActions.js" />
-        <option value="$PROJECT_DIR$/client/src/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" />
         <option value="$PROJECT_DIR$/client/src/components/layout/NavBar.js" />
-        <option value="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" />
         <option value="$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js" />
+        <option value="$PROJECT_DIR$/client/src/App.js" />
+        <option value="$PROJECT_DIR$/client/src/actions/profileActions.js" />
+        <option value="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" />
       </list>
     </option>
   </component>
@@ -207,7 +231,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="y" value="-1080" />
-    <option name="width" value="1187" />
+    <option name="width" value="1349" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -569,7 +593,7 @@
       <workItem from="1532184698489" duration="36000" />
       <workItem from="1532198790061" duration="13292000" />
       <workItem from="1532265577410" duration="17759000" />
-      <workItem from="1532309437346" duration="2720000" />
+      <workItem from="1532309437346" duration="8158000" />
     </task>
     <task id="LOCAL-00001" summary="export re-written&#10;&#10;deleted route&#10;api/profile/tests &#10;&#10;added&#10;GET api/profile/all&#10;GET api/profile/handle/:handle&#10;GET api/profile/user/:user_id&#10;&#10;fixed&#10;social networks formation">
       <created>1530238110687</created>
@@ -858,11 +882,25 @@
       <option name="project" value="LOCAL" />
       <updated>1532318563895</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add education and add experience initialized">
+      <created>1532318730305</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1532318730305</updated>
+    </task>
+    <task id="LOCAL-00043" summary="add experience for UI complete">
+      <created>1532323324969</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1532323324969</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268256000" />
+    <option name="totallyTimeSpent" value="273694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -874,19 +912,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-1080" width="1187" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-1080" width="1349" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65695363" visible="true" weight="0.20230702" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.65753424" weight="0.12153518" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.24092409" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3655723" side_tool="true" weight="0.17032968" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.3655723" side_tool="true" visible="true" weight="0.17032968" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.66459626" weight="0.20659341" />
-      <window_info id="npm" order="2" sideWeight="0.34309623" side_tool="true" weight="0.15254237" />
-      <window_info id="Structure" order="1" sideWeight="0.34304637" side_tool="true" visible="true" weight="0.20230702" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.63442767" visible="true" weight="0.17032968" />
-      <window_info anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.17302573" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.3366951" side_tool="true" visible="true" weight="0.20769231" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.66330487" visible="true" weight="0.20769231" />
+      <window_info id="npm" order="2" sideWeight="0.34309623" side_tool="true" weight="0.15245202" />
+      <window_info id="Structure" order="1" sideWeight="0.34246576" side_tool="true" weight="0.12153518" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.63460046" weight="0.16813187" />
+      <window_info anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.10318076" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39901477" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -900,6 +937,30 @@
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32838285" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info id="npm" order="2" sideWeight="0.34309623" side_tool="true" weight="0.15254237" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65753424" visible="true" weight="0.12153518" />
+      <window_info id="Structure" order="1" sideWeight="0.34246576" side_tool="true" visible="true" weight="0.12153518" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.24092409" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6641791" visible="true" weight="0.20565833" />
+      <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32840723" />
+      <window_info anchor="bottom" id="REST Client" order="0" weight="0.5303777" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39901477" />
+      <window_info anchor="right" x="0" y="0" width="291" height="509" id="Documentation" order="3" side_tool="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.63539445" weight="0.1686616" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3655723" side_tool="true" weight="0.17032968" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32838285" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.33582088" side_tool="true" visible="true" weight="0.20565833" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Quokka" order="4" weight="0.24302134" />
+      <window_info anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.10394456" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -935,8 +996,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="ready to create react components" />
-    <MESSAGE value="Router and Routes installed, first routes implemented" />
     <MESSAGE value="redux implementation starts" />
     <MESSAGE value="comment" />
     <MESSAGE value="test_dispatch" />
@@ -960,7 +1019,9 @@
     <MESSAGE value="Dashboard tunning and delete user action/reducer in the works" />
     <MESSAGE value="User account deletion implemented" />
     <MESSAGE value="profile update working, dashboard link added to header" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile update working, dashboard link added to header" />
+    <MESSAGE value="add education and add experience initialized" />
+    <MESSAGE value="add experience for UI complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="add experience for UI complete" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1300,26 +1361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/actions/profileActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
-          <folding>
-            <element signature="e#62#180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding>
-            <element signature="e#840#900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1354,10 +1395,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+          <folding>
+            <element signature="e#272#320#0" expanded="true" />
+            <element signature="e#583#619#0" expanded="true" />
+            <element signature="e#840#900#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/actions/profileActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="96" column="16" lean-forward="true" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+          <folding>
+            <element signature="e#62#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="423">
+          <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="e#12#53#0" expanded="true" />
             <element signature="e#190#251#0" expanded="true" />
@@ -1366,10 +1432,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="e#12#53#0" expanded="true" />
+            <element signature="e#196#250#0" expanded="true" />
+            <element signature="n#!!block;n#render#0;n#AddExperience#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
