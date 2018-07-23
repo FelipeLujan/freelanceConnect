@@ -18,6 +18,7 @@ import Landing from "./components/layout/Landing";
 import Register from "./components/auth/register";
 import Login from "./components/auth/login";
 import Dashboard from "./components/dashboard/Dashboard";
+import AddExperience from "./components/add_credentials/AddExperience";
 
 //auth
 import jwt_decode from "jwt-decode";
@@ -81,6 +82,13 @@ class App extends Component {
                   exact
                   component={EditProfile}
                   path="/edit-profile"
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  component={AddExperience}
+                  path="/add-experience"
                 />
               </Switch>
             </div>
