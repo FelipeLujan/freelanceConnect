@@ -30,6 +30,7 @@ import { clearCurrentProfile } from "./actions/profileActions";
 //guard for private routes
 import PrivateRoute from "./components/common/PrivateRoute";
 import CreateProfile from "./components/Create-Profile/CreateProfile";
+import EditProfile from "./components/edit_profile/EditProfile";
 
 //in order to have the user info and JWT token available anywhere the user goes
 //it's needed to set up the auth state from localstorage
@@ -73,6 +74,13 @@ class App extends Component {
                   exact
                   component={CreateProfile}
                   path="/create-profile"
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  component={EditProfile}
+                  path="/edit-profile"
                 />
               </Switch>
             </div>
