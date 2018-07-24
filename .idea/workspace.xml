@@ -7,16 +7,7 @@
     <bookmark url="file://$PROJECT_DIR$/client/src/actions/profileActions.js" line="34" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="Go back button set to component">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/validation/profile.js" afterDir="false" />
-    </list>
+    <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="bug fixed with profile website and profile githubusername" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -50,25 +41,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ico" value="1" />
-          <entry key="js" value="36" />
+          <entry key="js" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="36" />
+          <entry key="JavaScript" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="1468" />
-          <entry key="txt" value="138" />
+          <entry key="txt" value="205" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="1468" />
-          <entry key="PLAIN_TEXT" value="138" />
+          <entry key="PLAIN_TEXT" value="205" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -112,13 +103,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1350">
+                <state>
                   <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
                   <folding>
                     <element signature="e#12#53#0" expanded="true" />
                     <element signature="e#189#250#0" expanded="true" />
-                    <element signature="e#3533#4612#0" />
-                    <element signature="e#4665#5338#0" />
                   </folding>
                 </state>
               </provider>
@@ -131,9 +120,6 @@
                   <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
-                    <element signature="e#2003#3034#0" />
-                    <element signature="e#2019#2255#0" />
-                    <element signature="e#2267#2508#0" />
                   </folding>
                 </state>
               </provider>
@@ -672,7 +658,7 @@
       <workItem from="1532353096471" duration="21000" />
       <workItem from="1532353140612" duration="5428000" />
       <workItem from="1532386808474" duration="6096000" />
-      <workItem from="1532402302641" duration="6227000" />
+      <workItem from="1532402302641" duration="6500000" />
     </task>
     <task id="LOCAL-00001" summary="export re-written&#10;&#10;deleted route&#10;api/profile/tests &#10;&#10;added&#10;GET api/profile/all&#10;GET api/profile/handle/:handle&#10;GET api/profile/user/:user_id&#10;&#10;fixed&#10;social networks formation">
       <created>1530238110687</created>
@@ -996,11 +982,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532394627837</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="bug fixed with profile website and profile githubusername">
+      <created>1532408736273</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1532408736273</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292403000" />
+    <option name="totallyTimeSpent" value="292676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1013,25 +1006,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65158373" visible="true" weight="0.1380597" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.65158373" visible="true" weight="0.1380597" />
       <window_info id="Structure" order="1" sideWeight="0.348865" side_tool="true" weight="0.2833698" />
       <window_info id="npm" order="2" sideWeight="0.3484163" side_tool="true" weight="0.2833698" />
       <window_info anchor="bottom" id="REST Client" order="0" weight="0.5303777" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3274918" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6603951" visible="true" weight="0.2516269" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6609808" weight="0.2516269" />
       <window_info anchor="bottom" id="Quokka" order="4" weight="0.24302134" />
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49946696" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.24092409" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3655723" side_tool="true" weight="0.17032968" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6301969" weight="0.20390455" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.6295309" visible="true" weight="0.20390455" />
       <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32840723" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.33960488" side_tool="true" weight="0.27382258" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.3704691" side_tool="true" visible="true" weight="0.20390455" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1099,7 +1091,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Capital U" />
     <MESSAGE value="auth grabbed from state.&#10;prop-types" />
     <MESSAGE value="prop-types and auth grabbed from state" />
     <MESSAGE value="implementing redux on register route" />
@@ -1124,7 +1115,8 @@
     <MESSAGE value="add experience from form working" />
     <MESSAGE value="dashboard completed, submit button created.&#10;delete experience and delete education actions created" />
     <MESSAGE value="Go back button set to component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Go back button set to component" />
+    <MESSAGE value="bug fixed with profile website and profile githubusername" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed with profile website and profile githubusername" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1165,13 +1157,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/devconnector_theme/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="65" column="6" lean-forward="true" selection-start-line="45" selection-end-line="65" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1474,9 +1459,6 @@
           <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#2003#3034#0" />
-            <element signature="e#2019#2255#0" />
-            <element signature="e#2267#2508#0" />
           </folding>
         </state>
       </provider>
@@ -1513,18 +1495,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
+        <state>
           <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
           <folding>
             <element signature="e#12#53#0" expanded="true" />
             <element signature="e#189#250#0" expanded="true" />
-            <element signature="e#3533#4612#0" />
-            <element signature="e#4665#5338#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/keys.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Profile.js">
