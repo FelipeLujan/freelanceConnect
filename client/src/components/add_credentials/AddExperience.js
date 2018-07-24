@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 //Components
 import TextFieldGroup from "../common/TextFieldGroup";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
+import { ButtonComponent } from "../common/SubmitButton";
 
 //actions
 import { addExperience } from "../../actions/profileActions";
@@ -147,11 +148,7 @@ class AddExperience extends Component {
                   error={errors.description}
                   info={"Let us now what you used to do in that job."}
                 />
-                <input
-                  type="submit"
-                  value={"submit"}
-                  className={"btn btn-block btn-info mt-4"}
-                />
+                <ButtonComponent />
               </form>
             </div>
           </div>

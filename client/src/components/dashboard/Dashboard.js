@@ -10,6 +10,8 @@ import { deleteAccount, getCurrentProfile } from "../../actions/profileActions";
 //components
 import Spinner from "../common/Spinner";
 import ProfileActionsComponent from "./ProfileActions";
+import Experience from "./Experience";
+import Education from "./Education";
 
 class Dashboard extends Component {
   componentDidMount() {
@@ -34,11 +36,12 @@ class Dashboard extends Component {
         dashBoardContent = (
           <div>
             <p className="lead text-muted">
-              Welcome
-              <Link to={`/profile/${profile.handle}`}>{user.name}</Link>
+              Welcome <Link to={`/profile/${profile.handle}`}>{user.name}</Link>
             </p>
             <ProfileActionsComponent />
-            {/*TODO experience and education*/}
+            <Experience experience={profile.experience} />
+            <Education education={profile.education} />
+            {/*here im passing the experience array as props*/}
             <div>
               <div style={{ marginBottom: "60 px" }}>
                 <button

@@ -19,6 +19,7 @@ import Register from "./components/auth/register";
 import Login from "./components/auth/login";
 import Dashboard from "./components/dashboard/Dashboard";
 import AddExperience from "./components/add_credentials/AddExperience";
+import AddEducation from "./components/add_credentials/AddEducation";
 
 //auth
 import jwt_decode from "jwt-decode";
@@ -89,6 +90,13 @@ class App extends Component {
                   exact
                   component={AddExperience}
                   path="/add-experience"
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  component={AddEducation}
+                  path="/add-education"
                 />
               </Switch>
             </div>
