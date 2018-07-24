@@ -8,6 +8,7 @@ const ProfileSchema = new Schema({
     type: Schema.Types.ObjectId,
     //this because the user is going to be linked to the profile
     ref: "users"
+    //users refers to the users collection
   },
   handle: {
     type: String,
@@ -24,6 +25,9 @@ const ProfileSchema = new Schema({
   status: {
     type: String,
     required: true
+  },
+  website: {
+    type: String
   },
   skills: {
     type: [String],

@@ -19,7 +19,7 @@ const validateEducationInput = require("../../validation/education");
 // because i used app.use("/api/users", users), router.get("/tests") renders localhost:xxx/api/users/tests
 
 //@route    GET api/profile/
-//@desc     get current user's profile (when the person registers he doesn't have the prfile, just the user)
+//@desc     get current user's profile (when the person registers he doesn't have the profile, just the user)
 //@access   private
 router.get(
   "/",
@@ -39,7 +39,6 @@ router.get(
           errors.noProfile = "there is no profile for this user";
           return res.status(404).json();
         }
-        console.log("profile found");
         res.json(profile);
       })
       .catch(err => {
@@ -103,7 +102,7 @@ router.get("/user/:user_id", (req, res) => {
       }
       res.json(profile);
     })
-    .catch(err =>
+    .catch(() =>
       res.status(404).json({ profile: "there is no profile for this user" })
     );
 });
@@ -154,6 +153,7 @@ router.post(
     Profile.findOne({ user: req.user.id }).then(profile => {
       if (profile) {
         console.log("profile found for this user");
+        console.log(profileFields);
         // search for an user given the logged in user's id
         //if a profile with this id is found, that means that the user is updating, not creating a new profile
         Profile.findOneAndUpdate(
@@ -163,7 +163,7 @@ router.post(
         )
           .then(profile => {
             res.json(profile);
-            console.log("profile found and updated");
+            console.log("profile has been updated");
           })
           .catch(error => console.log(error));
       } else {

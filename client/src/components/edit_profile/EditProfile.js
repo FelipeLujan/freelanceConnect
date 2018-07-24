@@ -25,7 +25,7 @@ class CreateProfile extends Component {
       location: "",
       status: "",
       skills: "",
-      githubusername: "",
+      githubUsername: "",
       bio: "",
       twitter: "",
       facebook: "",
@@ -44,7 +44,6 @@ class CreateProfile extends Component {
 
   componentDidMount() {
     this.props.getCurrentProfile();
-    console.log(this.props);
   }
 
   componentDidUpdate(prevProps) {
@@ -64,7 +63,7 @@ class CreateProfile extends Component {
         company = "",
         website = "",
         location = "",
-        githubusername = "",
+        githubUsername = "",
         bio = "",
         handle = "",
         status = 0,
@@ -90,7 +89,7 @@ class CreateProfile extends Component {
           location,
           status,
           skills: skillsCSV,
-          githubusername,
+          githubUsername,
           bio,
           twitter,
           facebook,
@@ -112,7 +111,7 @@ class CreateProfile extends Component {
       location: this.state.location,
       status: this.state.status,
       skills: this.state.skills,
-      githubusername: this.state.githubusername,
+      githubUsername: this.state.githubUsername,
       bio: this.state.bio,
       twitter: this.state.twitter,
       linkedin: this.state.linkedin,
@@ -122,6 +121,7 @@ class CreateProfile extends Component {
     };
 
     this.props.createProfile(profileData, this.props.history);
+    console.log(profileData);
   }
 
   onChange(event) {
@@ -278,10 +278,10 @@ class CreateProfile extends Component {
                 />
                 <TextFieldGroup
                   placeholder={"Github username"}
-                  name={"githubusername"}
-                  value={this.state.githubusername}
+                  name={"githubUsername"}
+                  value={this.state.githubUsername}
                   onChange={this.onChange}
-                  error={errors.githubusername}
+                  error={errors.githubUsername}
                   info={
                     "If you want your latest projects to show up in your profile, please fill in this field."
                   }

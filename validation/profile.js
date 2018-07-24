@@ -33,6 +33,7 @@ function validateProfileInput(data) {
   //some more validations on optional fields
   if (!isEmpty(data.website)) {
     //these if statements are going to check if the fields are not empty, if they are not, check the content
+    console.log(data.website);
     if (!validator.isURL(data.website)) {
       errors.website = "Please use a URL format.";
     }

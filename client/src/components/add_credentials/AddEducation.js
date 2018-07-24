@@ -173,4 +173,4 @@ AddEducation.propTypes = {
 export default connect(
   mapStateToProps,
   { addEducation }
-)(withRouter(AddEducation));
+)(withRouter(AddEducation));

@@ -7,12 +7,15 @@
     <bookmark url="file://$PROJECT_DIR$/client/src/actions/profileActions.js" line="34" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="dashboard completed, submit button created.&#10;delete experience and delete education actions created">
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/GoBackButton.js" afterDir="false" />
+    <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="Go back button set to component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/validation/profile.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,33 +41,34 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ico" value="1" />
-          <entry key="js" value="24" />
+          <entry key="js" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="24" />
+          <entry key="JavaScript" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1356" />
-          <entry key="txt" value="107" />
+          <entry key="js" value="1468" />
+          <entry key="txt" value="138" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1356" />
-          <entry key="PLAIN_TEXT" value="107" />
+          <entry key="JavaScript" value="1468" />
+          <entry key="PLAIN_TEXT" value="138" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -102,21 +106,93 @@
     <favorites_list name="med" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="217" column="32" selection-start-line="217" selection-start-column="32" selection-end-line="217" selection-end-column="32" />
-              <folding>
-                <element signature="e#12#53#0" expanded="true" />
-                <element signature="e#189#250#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.44098648">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1350">
+                  <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#12#53#0" expanded="true" />
+                    <element signature="e#189#250#0" expanded="true" />
+                    <element signature="e#3533#4612#0" />
+                    <element signature="e#4665#5338#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="163">
+                  <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                    <element signature="e#2003#3034#0" />
+                    <element signature="e#2019#2255#0" />
+                    <element signature="e#2267#2508#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/routes/api/profile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="112">
+                  <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/actions/profileActions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/actions/authActions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="478">
+                  <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/routes/api/profile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-243">
+                  <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+                  <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+                  <caret line="129" column="66" selection-start-line="129" selection-start-column="66" selection-end-line="129" selection-end-column="66" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/models/Profile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="342">
+                  <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,12 +219,19 @@
       <find>current</find>
       <find>reg</find>
       <find>get</find>
-      <find>login</find>
       <find>Junior Web Developer</find>
       <find>dele</find>
       <find>delete</find>
       <find>exp</find>
       <find>gob</find>
+      <find>consol</find>
+      <find>git</find>
+      <find>gith</find>
+      <find>console</find>
+      <find>profile fou</find>
+      <find>login</find>
+      <find>website</find>
+      <find>web</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,8 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/validation/experience.js" />
-        <option value="$PROJECT_DIR$/validation/register.js" />
         <option value="$PROJECT_DIR$/validation/education.js" />
         <option value="$PROJECT_DIR$/models/Post.js" />
         <option value="$PROJECT_DIR$/validation/post.js" />
@@ -186,7 +267,6 @@
         <option value="$PROJECT_DIR$/client/src/actions/authActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/Spinner.js" />
-        <option value="$PROJECT_DIR$/routes/api/profile.js" />
         <option value="$PROJECT_DIR$/routes/api/users.js" />
         <option value="$PROJECT_DIR$/client/src/components/PrivateRoute.js" />
         <option value="$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js" />
@@ -194,7 +274,6 @@
         <option value="$PROJECT_DIR$/client/src/components/common/inputGroup.js" />
         <option value="$PROJECT_DIR$/client/src/store.js" />
         <option value="$PROJECT_DIR$/client/src/components/auth/login.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" />
         <option value="$PROJECT_DIR$/client/src/actions/types.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/layout/NavBar.js" />
@@ -204,10 +283,14 @@
         <option value="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" />
         <option value="$PROJECT_DIR$/client/src/actions/profileActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/Education.js" />
-        <option value="$PROJECT_DIR$/client/src/components/common/GoBackButton.js" />
         <option value="$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js" />
         <option value="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" />
+        <option value="$PROJECT_DIR$/client/src/components/common/GoBackButton.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" />
         <option value="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" />
+        <option value="$PROJECT_DIR$/routes/api/profile.js" />
+        <option value="$PROJECT_DIR$/validation/profile.js" />
+        <option value="$PROJECT_DIR$/models/Profile.js" />
       </list>
     </option>
   </component>
@@ -235,11 +318,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="-1080" />
     <option name="width" value="1081" />
-    <option name="height" value="1047" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -247,7 +329,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,43 +339,7 @@
             <path>
               <item name="freelanceConnect" type="b2602c69:ProjectViewProjectNode" />
               <item name="freelanceConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="freelanceConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="freelanceConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="freelanceConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="freelanceConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="freelanceConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="freelanceConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="add_credentials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="freelanceConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="freelanceConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="freelanceConnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="freelanceConnect" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="freelanceConnect" type="b2602c69:ProjectViewProjectNode" />
@@ -305,6 +350,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -625,7 +671,8 @@
       <workItem from="1532352092647" duration="909000" />
       <workItem from="1532353096471" duration="21000" />
       <workItem from="1532353140612" duration="5428000" />
-      <workItem from="1532386808474" duration="5450000" />
+      <workItem from="1532386808474" duration="6096000" />
+      <workItem from="1532402302641" duration="6227000" />
     </task>
     <task id="LOCAL-00001" summary="export re-written&#10;&#10;deleted route&#10;api/profile/tests &#10;&#10;added&#10;GET api/profile/all&#10;GET api/profile/handle/:handle&#10;GET api/profile/user/:user_id&#10;&#10;fixed&#10;social networks formation">
       <created>1530238110687</created>
@@ -942,11 +989,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532393433026</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Go back button set to component">
+      <created>1532394627836</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1532394627837</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285530000" />
+    <option name="totallyTimeSpent" value="292403000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -958,57 +1012,57 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-1080" width="1081" height="1047" extended-state="0" />
+    <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6526055" visible="true" weight="0.2487757" />
-      <window_info id="Structure" order="1" sideWeight="0.34739456" side_tool="true" visible="true" weight="0.2487757" />
-      <window_info id="npm" order="2" sideWeight="0.34739456" side_tool="true" weight="0.22241682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65158373" visible="true" weight="0.1380597" />
+      <window_info id="Structure" order="1" sideWeight="0.348865" side_tool="true" weight="0.2833698" />
+      <window_info id="npm" order="2" sideWeight="0.3484163" side_tool="true" weight="0.2833698" />
       <window_info anchor="bottom" id="REST Client" order="0" weight="0.5303777" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3274918" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.66151386" weight="0.27382258" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6603951" visible="true" weight="0.2516269" />
       <window_info anchor="bottom" id="Quokka" order="4" weight="0.24302134" />
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49946696" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.24092409" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3655723" side_tool="true" weight="0.17032968" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6317336" visible="true" weight="0.11719605" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6301969" weight="0.20390455" />
       <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32840723" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.3682664" side_tool="true" visible="true" weight="0.11719605" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.33960488" side_tool="true" weight="0.27382258" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="291" height="509" id="Documentation" order="3" side_tool="true" weight="0.32954547" />
-      <window_info anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.16356513" />
+      <window_info anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.09221748" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32995737" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6557377" visible="true" weight="0.123667374" />
-      <window_info id="Structure" order="1" sideWeight="0.34246576" side_tool="true" weight="0.12153518" />
-      <window_info id="npm" order="2" sideWeight="0.3442623" side_tool="true" visible="true" weight="0.123667374" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.65158373" visible="true" weight="0.1380597" />
+      <window_info id="Structure" order="1" sideWeight="0.348865" side_tool="true" weight="0.2833698" />
+      <window_info id="npm" order="2" sideWeight="0.3484163" side_tool="true" weight="0.2833698" />
       <window_info anchor="bottom" id="REST Client" order="0" weight="0.5303777" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.66151386" visible="true" weight="0.20607375" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3274918" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.6603951" visible="true" weight="0.17462039" />
       <window_info anchor="bottom" id="Quokka" order="4" weight="0.24302134" />
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49946696" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.24092409" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3655723" side_tool="true" weight="0.17032968" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6332623" weight="0.11860718" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6301969" weight="0.08324206" />
       <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32840723" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.33848614" side_tool="true" visible="true" weight="0.20607375" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="291" height="509" id="Documentation" order="4" side_tool="true" weight="0.32954547" />
-      <window_info anchor="right" id="Favorites" order="5" sideWeight="0.5030441" side_tool="true" weight="0.07089552" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.33960488" side_tool="true" weight="0.27382258" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="291" height="509" id="Documentation" order="3" side_tool="true" weight="0.32954547" />
+      <window_info active="true" anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.09221748" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32995737" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1045,7 +1099,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="test_dispatch" />
     <MESSAGE value="Capital U" />
     <MESSAGE value="auth grabbed from state.&#10;prop-types" />
     <MESSAGE value="prop-types and auth grabbed from state" />
@@ -1070,7 +1123,8 @@
     <MESSAGE value="add experience for UI complete" />
     <MESSAGE value="add experience from form working" />
     <MESSAGE value="dashboard completed, submit button created.&#10;delete experience and delete education actions created" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard completed, submit button created.&#10;delete experience and delete education actions created" />
+    <MESSAGE value="Go back button set to component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Go back button set to component" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1092,16 +1146,6 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/api/profile.js</url>
-          <line>23</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/api/profile.js</url>
-          <line>57</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/auth/register.js</url>
           <line>94</line>
           <option name="timeStamp" value="8" />
@@ -1111,31 +1155,16 @@
           <line>124</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/api/profile.js</url>
+          <line>112</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/devconnector_theme/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="118" lean-forward="true" selection-start-line="8" selection-start-column="118" selection-end-line="8" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/layout/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devconnector_theme/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="76" column="6" selection-start-line="45" selection-end-line="76" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/devconnector_theme/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
@@ -1205,13 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="116" column="14" lean-forward="true" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1318,22 +1340,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/actions/authActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/User.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-687">
-          <caret line="248" column="16" selection-start-line="248" selection-start-column="12" selection-end-line="248" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/devconnector_theme/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1349,27 +1357,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="82" column="34" lean-forward="true" selection-end-line="278" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/validation/is-empty.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1389,16 +1380,6 @@
           <caret line="15" column="23" lean-forward="true" selection-end-line="65" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/actions/profileActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="156" column="2" lean-forward="true" selection-start-line="156" selection-start-column="2" selection-end-line="156" selection-end-column="2" />
-          <folding>
-            <element signature="e#62#180#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1452,16 +1433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/common/GoBackButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1473,14 +1444,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/common/GoBackButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/actions/profileActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/actions/authActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#2003#3034#0" />
+            <element signature="e#2019#2255#0" />
+            <element signature="e#2267#2508#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validation/is-empty.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validation/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+          <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+          <caret line="129" column="66" selection-start-line="129" selection-start-column="66" selection-end-line="129" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="217" column="32" selection-start-line="217" selection-start-column="32" selection-end-line="217" selection-end-column="32" />
+        <state relative-caret-position="1350">
+          <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
           <folding>
             <element signature="e#12#53#0" expanded="true" />
             <element signature="e#189#250#0" expanded="true" />
+            <element signature="e#3533#4612#0" />
+            <element signature="e#4665#5338#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
