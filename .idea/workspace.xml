@@ -7,18 +7,12 @@
     <bookmark url="file://$PROJECT_DIR$/client/src/actions/profileActions.js" line="34" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/SubmitButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/Education.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/Experience.js" afterDir="false" />
+    <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="dashboard completed, submit button created.&#10;delete experience and delete education actions created">
+      <change afterPath="$PROJECT_DIR$/client/src/components/common/GoBackButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/profileActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/profileActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,23 +46,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ico" value="1" />
-          <entry key="js" value="17" />
+          <entry key="js" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="17" />
+          <entry key="JavaScript" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1285" />
+          <entry key="js" value="1356" />
+          <entry key="txt" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1285" />
+          <entry key="JavaScript" value="1356" />
+          <entry key="PLAIN_TEXT" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -108,35 +104,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js">
+        <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
+            <state relative-caret-position="165">
+              <caret line="217" column="32" selection-start-line="217" selection-start-column="32" selection-end-line="217" selection-end-column="32" />
               <folding>
                 <element signature="e#12#53#0" expanded="true" />
-                <element signature="e#195#249#0" expanded="true" />
+                <element signature="e#189#250#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="55" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="55" />
-              <folding>
-                <element signature="e#12#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/common/SubmitButton.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -173,6 +148,7 @@
       <find>dele</find>
       <find>delete</find>
       <find>exp</find>
+      <find>gob</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/validation/experience.js" />
         <option value="$PROJECT_DIR$/validation/register.js" />
         <option value="$PROJECT_DIR$/validation/education.js" />
@@ -222,7 +197,6 @@
         <option value="$PROJECT_DIR$/client/src/components/Create-Profile/CreateProfile.js" />
         <option value="$PROJECT_DIR$/client/src/actions/types.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js" />
-        <option value="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" />
         <option value="$PROJECT_DIR$/client/src/components/layout/NavBar.js" />
         <option value="$PROJECT_DIR$/client/src/components/add_credentials/Button.js" />
         <option value="$PROJECT_DIR$/client/src/App.js" />
@@ -230,8 +204,10 @@
         <option value="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" />
         <option value="$PROJECT_DIR$/client/src/actions/profileActions.js" />
         <option value="$PROJECT_DIR$/client/src/components/dashboard/Education.js" />
-        <option value="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" />
+        <option value="$PROJECT_DIR$/client/src/components/common/GoBackButton.js" />
         <option value="$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js" />
+        <option value="$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js" />
+        <option value="$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js" />
       </list>
     </option>
   </component>
@@ -262,7 +238,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="y" value="-1080" />
-    <option name="width" value="1172" />
+    <option name="width" value="1081" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -333,7 +309,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="bu&#9;FILE&#9;file://C:/Users/pipe/Documents/coding/react/freelanceConnect/client/src/components/add_credentials/Button.js&#10;payload&#9;null&#9;null&#10;store\&#9;FILE&#9;file://C:/Users/pipe/Documents/coding/react/freelanceConnect/client/src/store.js&#10;typeof&#9;null&#9;null&#10;walla&#9;ACTION&#9;Wallaby.ShowLicense&#10;wallaby&#9;ACTION&#9;com.wallaby.javascript.actions.RunTestAction" />
+    <property name="SearchEverywhereHistoryKey" value="dit&#9;FILE&#9;file://C:/Users/pipe/Documents/coding/react/freelanceConnect/client/src/components/edit_profile/EditProfile.js&#10;bu&#9;FILE&#9;file://C:/Users/pipe/Documents/coding/react/freelanceConnect/client/src/components/add_credentials/Button.js&#10;payload&#9;null&#9;null&#10;store\&#9;FILE&#9;file://C:/Users/pipe/Documents/coding/react/freelanceConnect/client/src/store.js&#10;typeof&#9;null&#9;null&#10;walla&#9;ACTION&#9;Wallaby.ShowLicense&#10;wallaby&#9;ACTION&#9;com.wallaby.javascript.actions.RunTestAction" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/common" />
@@ -357,6 +333,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="es6.move.members.recent.items">
+      <recent name="C:\Users\pipe\Documents\coding\react\freelanceConnect\client\src\components\common\GoBackButton.js" />
       <recent name="C:\Users\pipe\Documents\coding\react\freelanceConnect\client\src\components\add_credentials\Button.js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -648,7 +625,7 @@
       <workItem from="1532352092647" duration="909000" />
       <workItem from="1532353096471" duration="21000" />
       <workItem from="1532353140612" duration="5428000" />
-      <workItem from="1532386808474" duration="4078000" />
+      <workItem from="1532386808474" duration="5450000" />
     </task>
     <task id="LOCAL-00001" summary="export re-written&#10;&#10;deleted route&#10;api/profile/tests &#10;&#10;added&#10;GET api/profile/all&#10;GET api/profile/handle/:handle&#10;GET api/profile/user/:user_id&#10;&#10;fixed&#10;social networks formation">
       <created>1530238110687</created>
@@ -958,11 +935,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532324503013</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="dashboard completed, submit button created.&#10;delete experience and delete education actions created">
+      <created>1532393433026</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1532393433026</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284158000" />
+    <option name="totallyTimeSpent" value="285530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -974,12 +958,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-1080" width="1172" height="1047" extended-state="0" />
+    <frame x="-7" y="-1080" width="1081" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.652793" visible="true" weight="0.22841726" />
-      <window_info id="Structure" order="1" sideWeight="0.34246576" side_tool="true" weight="0.12153518" />
-      <window_info id="npm" order="2" sideWeight="0.347207" side_tool="true" visible="true" weight="0.22841726" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6526055" visible="true" weight="0.2487757" />
+      <window_info id="Structure" order="1" sideWeight="0.34739456" side_tool="true" visible="true" weight="0.2487757" />
+      <window_info id="npm" order="2" sideWeight="0.34739456" side_tool="true" weight="0.22241682" />
       <window_info anchor="bottom" id="REST Client" order="0" weight="0.5303777" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3274918" />
@@ -990,15 +974,15 @@
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.24092409" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3655723" side_tool="true" weight="0.17032968" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6332623" weight="0.11719605" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6317336" visible="true" weight="0.11719605" />
       <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32840723" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.33848614" side_tool="true" weight="0.20607375" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.3682664" side_tool="true" visible="true" weight="0.11719605" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="291" height="509" id="Documentation" order="3" side_tool="true" weight="0.32954547" />
-      <window_info anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.15017986" />
+      <window_info anchor="right" id="Favorites" order="4" sideWeight="0.5030441" side_tool="true" visible="true" weight="0.16356513" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.32995737" />
     </layout>
     <layout-to-restore>
@@ -1061,7 +1045,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="comment" />
     <MESSAGE value="test_dispatch" />
     <MESSAGE value="Capital U" />
     <MESSAGE value="auth grabbed from state.&#10;prop-types" />
@@ -1086,7 +1069,8 @@
     <MESSAGE value="add education and add experience initialized" />
     <MESSAGE value="add experience for UI complete" />
     <MESSAGE value="add experience from form working" />
-    <option name="LAST_COMMIT_MESSAGE" value="add experience from form working" />
+    <MESSAGE value="dashboard completed, submit button created.&#10;delete experience and delete education actions created" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard completed, submit button created.&#10;delete experience and delete education actions created" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1131,13 +1115,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/devconnector_theme/landing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/devconnector_theme/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1403,26 +1380,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/public/favicon.ico">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="e#655#691#0" expanded="true" />
-            <element signature="e#912#972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/dashboard/Experience.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1467,27 +1426,60 @@
     <entry file="file://$PROJECT_DIR$/client/src/components/common/SubmitButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js">
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="55" />
+        <state relative-caret-position="639">
+          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
           <folding>
-            <element signature="e#12#53#0" expanded="true" />
+            <element signature="e#272#320#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddEducation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
+        <state relative-caret-position="165">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
           <folding>
             <element signature="e#12#53#0" expanded="true" />
             <element signature="e#195#249#0" expanded="true" />
+            <element signature="e#382#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/common/GoBackButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/add_credentials/AddExperience.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#12#53#0" expanded="true" />
+            <element signature="e#196#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="217" column="32" selection-start-line="217" selection-start-column="32" selection-end-line="217" selection-end-column="32" />
+          <folding>
+            <element signature="e#12#53#0" expanded="true" />
+            <element signature="e#189#250#0" expanded="true" />
           </folding>
         </state>
       </provider>

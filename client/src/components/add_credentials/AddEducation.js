@@ -7,8 +7,10 @@ import PropTypes from "prop-types";
 import TextFieldGroup from "../common/TextFieldGroup";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
 import { ButtonComponent } from "../common/SubmitButton";
+
 //actions
 import { addEducation } from "../../actions/profileActions";
+import { GoBackButton } from "../common/GoBackButton";
 
 //after i send the form, an action is called, in order to redirect after sending the action, with Router is needed
 
@@ -71,9 +73,7 @@ class AddEducation extends Component {
         <div className={"container"}>
           <div className={"row"}>
             <div className="col-md-8 m-auto">
-              <Link className={"btn btn-light"} to={"/dashboard"}>
-                Go Back
-              </Link>
+              <GoBackButton />
               <h1 className="display-4 text-center">Add education</h1>
               <p className="lead text-center">
                 Tell us a little bit of what you have studied (college,
@@ -173,4 +173,4 @@ AddEducation.propTypes = {
 export default connect(
   mapStateToProps,
   { addEducation }
-)(withRouter(AddEducation));
+)(withRouter(AddEducation));

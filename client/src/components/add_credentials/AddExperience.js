@@ -8,6 +8,7 @@ import PropTypes from "prop-types";
 import TextFieldGroup from "../common/TextFieldGroup";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
 import { ButtonComponent } from "../common/SubmitButton";
+import { GoBackButton } from "../common/GoBackButton";
 
 //actions
 import { addExperience } from "../../actions/profileActions";
@@ -73,9 +74,7 @@ class AddExperience extends Component {
         <div className={"container"}>
           <div className={"row"}>
             <div className="col-md-8 m-auto">
-              <Link className={"btn btn-light"} to={"/dashboard"}>
-                Go Back
-              </Link>
+              <GoBackButton />
               <h1 className="display-4 text-center">Add Experience</h1>
               <p className="lead text-center">
                 Add any job or position (current or previous)

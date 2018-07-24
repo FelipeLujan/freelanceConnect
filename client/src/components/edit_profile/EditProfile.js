@@ -3,18 +3,17 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
-
 //Components
 import SelectListGroup from "../common/SelectListGroupGroup";
 import InputGroup from "../common/inputGroup";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
 import TextFieldGroup from "../common/TextFieldGroup";
+import { GoBackButton } from "../common/GoBackButton";
 
 //actions
 import { createProfile, getCurrentProfile } from "../../actions/profileActions";
 
-//validation
-import isEmpty from "../../validation/isEmpty";
+//validation import {GoBackButton} from "../common/GoBackButton";
 
 class CreateProfile extends Component {
   constructor(props) {
@@ -216,6 +215,7 @@ class CreateProfile extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
+              <GoBackButton />
               <h1 className={"display-4 text-center"}>Edit Your Profile.</h1>
               <p className="lead text-center">
                 Please fill all fields you want to update.
