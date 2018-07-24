@@ -7,7 +7,12 @@
     <bookmark url="file://$PROJECT_DIR$/client/src/actions/profileActions.js" line="34" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="bug fixed with profile website and profile githubusername" />
+    <list default="true" id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="bug fixed with profile website and profile githubusername">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/keys.js" beforeDir="false" />
+    </list>
+    <list id="7f9799c1-1c44-4302-b4e0-171dec479d67" name="Revert: Delete keys.js" comment="Revert: Delete keys.js" />
+    <list id="1461a44c-aa00-4ebd-b3d6-6f80a925a687" name="Revert: keys removed from git" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -41,13 +46,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ico" value="1" />
-          <entry key="js" value="37" />
+          <entry key="js" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="37" />
+          <entry key="JavaScript" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -103,8 +108,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+                <state relative-caret-position="216">
+                  <caret line="128" column="3" lean-forward="true" selection-start-line="128" selection-start-column="3" selection-end-line="128" selection-end-column="3" />
                   <folding>
                     <element signature="e#12#53#0" expanded="true" />
                     <element signature="e#189#250#0" expanded="true" />
@@ -226,7 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/validation/education.js" />
         <option value="$PROJECT_DIR$/models/Post.js" />
         <option value="$PROJECT_DIR$/validation/post.js" />
         <option value="$PROJECT_DIR$/routes/api/posts.js" />
@@ -277,6 +281,7 @@
         <option value="$PROJECT_DIR$/routes/api/profile.js" />
         <option value="$PROJECT_DIR$/validation/profile.js" />
         <option value="$PROJECT_DIR$/models/Profile.js" />
+        <option value="$PROJECT_DIR$/config/keys.js" />
       </list>
     </option>
   </component>
@@ -587,6 +592,8 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="10c54ce3-dec6-46f3-8c10-0107c3f206a7" name="Default" comment="" />
+      <changelist id="7f9799c1-1c44-4302-b4e0-171dec479d67" name="Revert: Delete keys.js" comment="" />
+      <changelist id="1461a44c-aa00-4ebd-b3d6-6f80a925a687" name="Revert: keys removed from git" comment="" />
       <created>1527047375832</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -658,7 +665,7 @@
       <workItem from="1532353096471" duration="21000" />
       <workItem from="1532353140612" duration="5428000" />
       <workItem from="1532386808474" duration="6096000" />
-      <workItem from="1532402302641" duration="6500000" />
+      <workItem from="1532402302641" duration="7053000" />
     </task>
     <task id="LOCAL-00001" summary="export re-written&#10;&#10;deleted route&#10;api/profile/tests &#10;&#10;added&#10;GET api/profile/all&#10;GET api/profile/handle/:handle&#10;GET api/profile/user/:user_id&#10;&#10;fixed&#10;social networks formation">
       <created>1530238110687</created>
@@ -989,11 +996,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532408736273</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Revert: Delete keys.js">
+      <created>1532408954497</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1532408954497</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292676000" />
+    <option name="totallyTimeSpent" value="293229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1020,10 +1034,10 @@
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.24092409" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3655723" side_tool="true" weight="0.17032968" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.6295309" visible="true" weight="0.20390455" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6295309" visible="true" weight="0.37635574" />
       <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32840723" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.3704691" side_tool="true" visible="true" weight="0.20390455" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.3704691" side_tool="true" visible="true" weight="0.37635574" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1091,7 +1105,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="auth grabbed from state.&#10;prop-types" />
     <MESSAGE value="prop-types and auth grabbed from state" />
     <MESSAGE value="implementing redux on register route" />
     <MESSAGE value="redirect on user register" />
@@ -1116,7 +1129,8 @@
     <MESSAGE value="dashboard completed, submit button created.&#10;delete experience and delete education actions created" />
     <MESSAGE value="Go back button set to component" />
     <MESSAGE value="bug fixed with profile website and profile githubusername" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixed with profile website and profile githubusername" />
+    <MESSAGE value="Revert: Delete keys.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert: Delete keys.js" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1486,34 +1500,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
-          <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
-          <caret line="129" column="66" selection-start-line="129" selection-start-column="66" selection-end-line="129" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
-          <folding>
-            <element signature="e#12#53#0" expanded="true" />
-            <element signature="e#189#250#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="112">
+          <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/passport.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/keys.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/keys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/edit_profile/EditProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="128" column="3" lean-forward="true" selection-start-line="128" selection-start-column="3" selection-end-line="128" selection-end-column="3" />
+          <folding>
+            <element signature="e#12#53#0" expanded="true" />
+            <element signature="e#189#250#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
