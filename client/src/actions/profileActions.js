@@ -9,7 +9,7 @@ import {
   GET_PROFILES,
   PROFILE_LOADING,
   SET_CURRENT_USER
-} from "./types";
+} from "./type";
 
 //get current profile
 export const getCurrentProfile = () => dispatch => {
