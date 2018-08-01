@@ -34,6 +34,7 @@ import PrivateRoute from "./components/common/PrivateRoute";
 import CreateProfile from "./components/Create-Profile/CreateProfile";
 import EditProfile from "./components/edit_profile/EditProfile";
 import Profiles from "./components/profiles/Profiles";
+import UserProfile from "./components/profile/UserProfile";
 
 //in order to have the user info and JWT token available anywhere the user goes
 //it's needed to set up the auth state from localstorage
@@ -70,6 +71,7 @@ class App extends Component {
               <Route exact component={Register} path="/register" />
               <Route exact component={Login} path="/login" />
               <Route exact component={Profiles} path="/profiles" />{" "}
+              <Route exact component={UserProfile} path="/profile/:handle" />{" "}
               {/*this is unprotected route*/}
               <Switch>
                 <PrivateRoute exact component={Dashboard} path="/dashboard" />

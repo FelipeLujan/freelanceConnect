@@ -36,6 +36,27 @@ export const getCurrentProfile = () => dispatch => {
     );
 };
 
+//get profile from handle (in the url)
+export const getProfileByHandle = handle => dispatch => {
+  //
+  dispatch(setProfileLoading());
+  axios
+    .get(`/api/profile/handle/${handle}`)
+    .then(res =>
+      dispatch({
+        type: GET_PROFILE,
+        payload: res.data
+      })
+    )
+    .catch(err =>
+      //this time i want to know if the received profile is null instead of an empty object
+      dispatch({
+        type: GET_PROFILE,
+        payload: null
+      })
+    );
+};
+
 //Delete user and all its profile
 export const deleteAccount = () => dispatch => {
   if (
