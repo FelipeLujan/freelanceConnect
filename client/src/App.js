@@ -36,6 +36,7 @@ import CreateProfile from "./components/Create-Profile/CreateProfile";
 import EditProfile from "./components/edit_profile/EditProfile";
 import Profiles from "./components/profiles/Profiles";
 import UserProfile from "./components/profile/UserProfile";
+import Posts from "./components/posts/Posts";
 
 //in order to have the user info and JWT token available anywhere the user goes
 //it's needed to set up the auth state from localstorage
@@ -104,6 +105,9 @@ class App extends Component {
                   component={AddEducation}
                   path="/add-education"
                 />
+              </Switch>
+              <Switch>
+                <PrivateRoute exact component={Posts} path="/feed" />
               </Switch>
               <Route exact component={NotFound} path="/notfound" />
             </div>

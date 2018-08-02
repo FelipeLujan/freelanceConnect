@@ -2,6 +2,7 @@ import { combineReducers } from "redux";
 import authReducer from "./authReducer";
 import errorReducer from "./errorReducer";
 import profileReducer from "./profileReducer";
+import postreducer from "./postreducer";
 
 //reducers are going to be combined because there are going to be multiple reducers
 
@@ -9,5 +10,6 @@ import profileReducer from "./profileReducer";
 export default combineReducers({
   auth: authReducer,
   errors: errorReducer,
-  profile: profileReducer
+  profile: profileReducer,
+  post: postreducer
 });
