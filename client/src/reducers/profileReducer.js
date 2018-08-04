@@ -3,7 +3,7 @@ import {
   GET_PROFILE,
   GET_PROFILES,
   PROFILE_LOADING
-} from "../actions/types";
+} from "../actions/type";
 
 const initialState = {
   profile: null,

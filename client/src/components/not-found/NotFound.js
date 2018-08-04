@@ -10,6 +10,4 @@ const NotFound = props => {
   );
 };
 
-NotFound.propTypes = {};
-
 export default NotFound;

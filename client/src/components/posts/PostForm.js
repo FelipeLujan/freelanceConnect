@@ -29,12 +29,11 @@ class PostForm extends Component {
       avatar: user.avatar
     };
     this.props.addPost(newPost);
-    this.setState({ text: "" });
+    // this.setState({ text: "" });
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
-      console.log(nextProps.errors);
       this.setState({ errors: nextProps.errors });
     }
   }
@@ -60,6 +59,7 @@ class PostForm extends Component {
                   error={errors.text}
                 />
               </div>
+
               <button type="submit" className="btn btn-dark">
                 Submit
               </button>
