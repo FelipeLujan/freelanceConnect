@@ -6,6 +6,7 @@ const profile = require("./routes/api/profile");
 const posts = require("./routes/api/posts");
 const bodyParser = require("body-parser");
 const passport = require("passport");
+const path = require("path");
 
 // initialize express
 // nodemon can auto update the server on changes
@@ -33,6 +34,16 @@ require("./config/passport")(passport);
 app.use("/api/users", users);
 app.use("/api/profile", profile);
 app.use("/api/posts", posts);
+
+//server static assets if in production, serve index.html inside build/stat
+if (process.env.NODE_ENV === "production") {
+  //set static
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 const port = process.env.PORT || 5000;
 // process.env.PORT  is the port needed for heroku deploy, otherwise run on port  5000
